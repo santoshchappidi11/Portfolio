@@ -38,11 +38,11 @@ const About = () => {
           <p>Get to know more about me.</p>
         </header>
         <main className="about-main">
-          <div className="about-img">
+          {/* <div className="about-img">
             <Zoom>
               <img src={skillsImage} alt="skills" loading="lazy" />
             </Zoom>
-          </div>
+          </div> */}
           <div className="about-content">
             <div className="content-intro">
               <h2>Hello!</h2>
@@ -64,7 +64,9 @@ const About = () => {
               </p>
             </div>
             <div className="content-skills">
-              <h2>Skills</h2>
+              <AttentionSeeker effect="pulse">
+                <h2>Skills</h2>
+              </AttentionSeeker>
               <div className="skills">
                 <Fade cascade>
                   <div className="badge">
@@ -87,7 +89,7 @@ const About = () => {
                   </div>
                   <div className="badge">
                     <div id="skills-img">
-                      <img src={reactImg} alt="react" />
+                      <img src={reactImg} alt="react" id="react" />
                     </div>
                     <h4>REACT JS</h4>
                   </div>

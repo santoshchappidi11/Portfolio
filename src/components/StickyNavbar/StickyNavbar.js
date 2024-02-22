@@ -41,12 +41,16 @@ const StickyNavbar = () => {
     <>
       <header className={navbar ? "navbar shadow" : "navbar"}>
         <div className="intro-logo">
-          <a href="./#" className={isHamburgerClicked && "change-logo-color"}>
+          <a href="./#" className={isHamburgerClicked && "change-logo-color-1"}>
             S<span>C</span>
           </a>
         </div>
         <div className="nav-links">
-          <ul>
+          <a href="#Contact">
+            {" "}
+            <span>Contact me!</span>
+          </a>
+          {/* <ul>
             {links.map((link) => {
               const { id, title, url } = link;
               return (
@@ -61,7 +65,7 @@ const StickyNavbar = () => {
                 </li>
               );
             })}
-          </ul>
+          </ul> */}
         </div>
 
         <div
@@ -76,7 +80,9 @@ const StickyNavbar = () => {
               const { id, title, url } = link;
               return (
                 <li key={id} onClick={checkHamburgerLinksClosed}>
-                  <a href={url}>{title}</a>
+                  <a href={url} className={title}>
+                    {title}
+                  </a>
                 </li>
               );
             })}

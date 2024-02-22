@@ -30,7 +30,10 @@ const Home = () => {
                 <p>Hello There</p>
               </Slide>
               <Fade cascade delay={1000} triggerOnce>
-                <h1>I am Santosh Chappidi, a MERN Stack Web Developer.</h1>
+                <h1>
+                  I'm <span className="multicolor">Santosh Chappidi</span>, MERN
+                  Stack <span className="greycolor">Web Developer.</span>
+                </h1>
               </Fade>
             </div>
             <div className="intro-btns">
@@ -60,11 +63,11 @@ const Home = () => {
               </div>
             </Fade>
           </div>
-          <div className="main-img">
+          {/* <div className="main-img">
             <Zoom>
               <img src={heroImage} alt="Intro" loading="lazy" />
             </Zoom>
-          </div>
+          </div> */}
         </main>
       </section>
     </>

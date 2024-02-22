@@ -9,7 +9,8 @@
     position: fixed;
     z-index: 10;
     transition: all 0.5s ease;
-    background-color: rgb(33, 33, 33);
+    background-color: black;
+    /* background-color: rgb(33, 33, 33); */
     /* background-color: rgba(253, 170, 16, 1); */
     /* border: 1px solid black; */
   }
@@ -23,7 +24,7 @@
     height: auto;
     width: 50%;
     z-index: 10;
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
   }
   
   .intro-logo a {
@@ -39,19 +40,54 @@
   }
   
   .intro-logo a span {
-    color: grey;
     /* border: 1px solid black; */
+    color: black;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
   }
 
-  .change-logo-color{
+  .change-logo-color-1{
+    /* color: black; */
     color: black !important;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
   }
+
   
   .nav-links {
     height: auto;
     width: 55%;
     z-index: 10;
-    /* border: 1px solid black; */
+    text-align: end;
+    padding: 0 50px 0 0;
+    /* border: 1px solid white; */
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-links a span{
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    border: 1px solid #656565;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links a span:hover{
+    background-color: #ffffff;
+    color: black !important;
+  }
+
+  .nav-links span{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
   }
   
   .nav-links ul {
@@ -105,17 +141,39 @@
     z-index: 10;
     /* border: 1px solid black; */
   }
+
+  .line-1{
+    background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 2px;
+    margin: 0.2rem 0;
+  }
+
+  .line-2{
+    background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 2px;
+    margin: 0.2rem 0;
+  }
+
+  .line-3{
+    background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 2px;
+    margin: 0.2rem 0;
+  }
   
   .line-1,
   .line-2,
   .line-3 {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);
     width: 35px;
-    height: 4px;
+    height: 2px; */
+    /* margin: 5px 0; */
+    /* margin:0.2rem; */
     transition: 0.2s ease;
-    margin: 3px 0;
     transition: all 0.5s;
-    transform-origin: 8px 2px;
+    transform-origin: 10px 2px;
   }
   
   .change .line-1 {
@@ -192,10 +250,36 @@
     transform: scaleX(1);
     font-size: 1.2rem;
   }
+
+  .hamburger-links ul li .Home:hover{
+    color: rgb(255, 0, 255);
+    transform: scaleX(1);
+    font-size: 1.2rem;
+  }
+
+  .hamburger-links ul li .About:hover{
+    color: orange;
+    transform: scaleX(1);
+    font-size: 1.2rem;
+  }
+
+  .hamburger-links ul li .Works:hover{
+    color: rgb(34, 255, 34);
+    transform: scaleX(1);
+    font-size: 1.2rem;
+  }
+
+  .hamburger-links ul li .Contact:hover{
+    color: orangered;
+    transform: scaleX(1);
+    font-size: 1.2rem;
+  }
   
   .hide {
     display: none;
   }
+
+
   
   /* RESPONSIVE----------------------------- */
   

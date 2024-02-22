@@ -1,7 +1,8 @@
 .section-5 {
     height: 100%;
     width: 100%;
-    background-color: rgb(33, 33, 33);
+    background-color: black;
+    /* background-color: rgb(33, 33, 33); */
   }
   
   .socials {
@@ -14,10 +15,15 @@
   }
   
   .socials .social-header {
-    color: white;
     margin-top: 2rem;
   }
   
+  .socials .social-header h2{
+    /* color: white; */
+    color: lightgreen;
+
+  }
+
   .socials .social-links {
     height: 40%;
     width: 30%;
@@ -75,7 +81,10 @@
   }
   
   .socials .social-logo a span {
-    color: grey;
+    /* color: grey; */
+    color: black;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
   }
   
   .copyright {

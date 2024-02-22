@@ -2,7 +2,8 @@
     height: 100%;
     width: 100%;
     padding-bottom: 2rem;
-    background-color: rgb(39, 39, 39);
+    /* background-color: rgb(39, 39, 39); */
+    background-color: black;
     /* background-color: orange; */
     /* background-image: linear-gradient(to top, orange,rgb(255, 188, 63)); */
   }
@@ -23,6 +24,7 @@
     font-size: 1.1rem;
     text-transform: uppercase;
     color: white;
+    color: orangered;
   }
   
   .contact-header h1 {
@@ -110,7 +112,8 @@
   .form form input:focus,
   .form form textarea:focus {
     outline: none;
-    background-color: rgb(253, 217, 151);
+    background-image: linear-gradient(to left, rgb(255, 38, 233,0.1), rgb(255, 0, 0, 0.2), rgb(255, 166, 0, 0.1));
+    /* background-color: rgb(255, 244, 224); */
     /* background-color: rgb(229, 229, 229); */
   }
   
