@@ -58,7 +58,8 @@ const Home = () => {
                   <button>Resume</button>
                 </a>
                 <a href="#About">
-                  SCROLL DOWN <i className="fas fa-angle-double-down"></i>
+                  SCROLL DOWN{" "}
+                  <i className="fas fa-angle-double-down" id="scroll-down"></i>
                 </a>
               </div>
             </Fade>

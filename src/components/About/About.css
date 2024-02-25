@@ -167,12 +167,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   .skills .badge:hover{
     /* box-shadow: rgba(117, 117, 117, 0.19) 0px 10px 20px, rgba(118, 118, 118, 0.23) 0px 6px 6px; */
-    transform:translateY(-2%);
+    /* transform:translateY(-2%); */
+    transform: scale(110%);
   }
   
   .skills .badge h4 {
@@ -192,6 +193,12 @@
 
   #skills-img #react{
   animation: rotateReact 6s infinite linear;
+  }
+
+
+  #about-contact a{
+  text-decoration: none;
+  color: orangered;
   }
 
   @keyframes rotateReact {
@@ -239,7 +246,7 @@
     }
 
     .content-intro p{
-      text-align: justify;
+      text-align: center;
     }
 
     .content-skills h2 {

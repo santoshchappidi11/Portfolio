@@ -186,6 +186,23 @@
       transform: translateY(0%);
     }
   }
+
+  #scroll-down{
+    animation: scroll 1.8s 1.5s infinite linear forwards;
+  }
+  
+
+  @keyframes scroll {
+    0%{
+      transform: translateY(0%);
+    }
+    50%{
+      transform: translateY(50%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
   
   /* RESPONSIVE------------------------------------ */
   @media (max-width: 1000px) {

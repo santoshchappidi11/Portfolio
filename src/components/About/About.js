@@ -47,20 +47,23 @@ const About = () => {
             <div className="content-intro">
               <h2>Hello!</h2>
               <p>
-                I’m a passionate <b>MERN Stack developer</b>, having a quite
-                good knowledge in <b>HTML, CSS, JAVASCRIPT and REACT</b>.
-                Comfortable with <b>Node.js and Framework like Express</b>. I am
-                <b> adaptable</b> and a <b>quick learner</b>, want to use my
-                knowledge and skills to gain more practical exposure within the
-                company,{" "}
-                <b>constantly seeking for new challenges and opportunities </b>
-                that will enhance both my knowledge and professional growth.
+                A passionate <b>MERN Stack developer</b>, having a quite good
+                knowledge in <b>HTML, CSS, JAVASCRIPT and REACT</b>. Comfortable
+                with <b>Node.js and Framework like Express</b>. A
+                <b> quick learner</b> with an <b>adaptable nature</b>. Eager to
+                <b> apply my skills and knowledge to real-world projects</b> and
+                contribute to a dynamic team. As a <b>recent post-graduate</b>,
+                i am actively <b>seeking a role</b> that not only allows me to
+                apply and expand upon my existing knowledge, but also
+                <b> offers continuous learning opportunities and challenges</b>.
               </p>
 
               <p>
                 I would love to hear from you, whether it's a
                 <b> Job, Internship opportunity or just a chat,</b> feel free to
-                <b> contact me!</b>
+                <b id="about-contact">
+                  <a href="./#Contact"> contact me!</a>
+                </b>
               </p>
             </div>
             <div className="content-skills">
