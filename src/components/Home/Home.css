@@ -7,6 +7,7 @@
     color: white;
     /* background-color: rgb(39, 39, 39); */
     background-color: black;
+    /* background-color: rgb(40, 40, 43); */
     /* background-color: rgba(253, 170, 15, 0.9); */
     /* border: 1px solid black; */
   }
@@ -112,7 +113,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
   }
   
   .intro-scroll a {
@@ -131,6 +132,7 @@
   
   .intro-scroll a:last-child {
     text-decoration: none;
+    font-weight: 400;
   }
   
   .intro-scroll a:nth-child(3) button {
@@ -138,7 +140,7 @@
     border: none;
     background: none;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     font-family: inherit;
     letter-spacing: 0.1rem;

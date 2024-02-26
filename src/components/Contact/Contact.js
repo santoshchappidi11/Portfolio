@@ -104,10 +104,10 @@ const Contact = () => {
               </Zoom>
             </div>
             <div className="details">
-              <label>
+              {/* <label>
                 <i className="fas fa-phone-alt fa-1x"></i>
                 <span>(+91) 8356015803</span>
-              </label>
+              </label> */}
               <label>
                 <i className="fas fa-envelope fa-1x"></i>
                 <span>santoshchappidi03@gmail.com</span>
