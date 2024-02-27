@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import "./Works.css";
-// import htmlImg from "../../Images/html-5.png";
-// import cssImg from "../../Images/css-3.png";
-// import jsImg from "../../Images/js.png";
-// import reactImg from "../../Images/react.png";
-// import expressImg from "../../Images/express.png";
-// import mongoImg from "../../Images/mongodb.png";
-// import nodeImg from "../../Images/node-js.png";
+import { useNavigate } from "react-router-dom";
 
 const ProjectCard = ({
   id,
@@ -14,11 +8,10 @@ const ProjectCard = ({
   image,
   description,
   languages,
-  view,
-  code,
   project_url,
   github_url,
 }) => {
+  const navigateTo = useNavigate();
   // const initialTilt = { mouseX: 0, mouseY: 0 };
   // const [tilt, setTilt] = useState(initialTilt);
 
@@ -36,6 +29,7 @@ const ProjectCard = ({
 
   return (
     <div
+      onClick={() => navigateTo(`project/${id}`)}
       className="project"
       key={id}
       // onMouseMove={handleMouseMove}
@@ -55,10 +49,13 @@ const ProjectCard = ({
       </div>
       <div className="project-description">
         <h2>{title}</h2>
-        <p>{description}</p>
-
+        <div id="project-description">
+          <p>{description}</p>
+          {/* <div id="project-fetaures">
+            {features?.length && features?.map((item) => <p>{item}</p>)}
+          </div> */}
+        </div>
         <div id="all-lang-logos">
-          {" "}
           {languages?.length &&
             languages?.map((lang) => (
               <div id="lang-logos">

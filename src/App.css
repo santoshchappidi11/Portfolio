@@ -1,3 +1,4 @@
+
 .loader {
   height: 100vh;
   width: 100%;
@@ -15,13 +16,15 @@
   font-family: inherit;
   font-size: 3rem;
   font-weight: 800;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black; */
   color: white;
 }
 
 .nav-logo a span {
-  color: #000000;
+  color: black;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: white;
 }
 
 .animate {
@@ -50,7 +53,7 @@
   height: 0.8rem;
   width: 0.8rem;
   border-radius: 50%;
-  background-color: black;
+  background-color: white;
 }
 
 .main-loader div:first-child {

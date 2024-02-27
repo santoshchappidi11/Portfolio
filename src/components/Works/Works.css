@@ -91,6 +91,7 @@
     border-radius: 0.5rem;
     color: white;
     backdrop-filter: blur(8px);
+    cursor: pointer;
     /* background-color: rgb(32, 32, 32); */
     background-color: rgb(28, 28, 28);
     transition: transform 0.3s ease-out;
@@ -236,6 +237,11 @@
   width: 65%;
   object-fit: contain;
   /* border-radius: 0.5rem; */
+}
+
+#project-description{
+  /* display: none; */
+  /* border: 1px solid white; */
 }
 
   

@@ -34,6 +34,7 @@ const Works = () => {
                   title,
                   image,
                   description,
+                  features,
                   languages,
                   view,
                   code,
@@ -48,6 +49,7 @@ const Works = () => {
                       // url={url}
                       image={image}
                       description={description}
+                      features={features}
                       languages={languages}
                       view={view}
                       code={code}

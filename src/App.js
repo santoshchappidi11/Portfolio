@@ -6,6 +6,22 @@ import About from "./components/About/About";
 import Works from "./components/Works/Works";
 import Contact from "./components/Contact/Contact";
 import Socials from "./components/Socials/Socials";
+import { Route, Routes } from "react-router-dom";
+import Project from "./components/Projects/Project.js";
+
+// const scrollabeContent = () => {};
+
+const ScrollableContent = () => {
+  return (
+    <div>
+      <Home />
+      <About />
+      <Works />
+      <Contact />
+      <Socials />
+    </div>
+  );
+};
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,11 +52,23 @@ function App() {
   return (
     <>
       <StickyNavbar />
-      <Home />
-      <About />
-      <Works />
-      <Contact />
-      <Socials />
+
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <div className="app">
+              <Home />
+              <About />
+              <Works />
+              <Contact />
+              <Socials />
+            </div>
+          }
+        />
+        <Route exact path="/project/:projectId" element={<Project />} />
+      </Routes>
     </>
   );
 }
