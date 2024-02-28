@@ -31,8 +31,14 @@ const Home = () => {
               </Slide>
               <Fade cascade delay={1000} triggerOnce>
                 <h1>
-                  I'm <span className="multicolor">Santosh Chappidi</span>, MERN
-                  Stack <span className="greycolor">Web Developer.</span>
+                  I'm <span className="multicolor">Santosh Chappidi,</span> MERN
+                  Stack <span className="greycolor">Web Developer</span>
+                  <span
+                    className="multicolor"
+                    style={{ color: "rgb(219, 81, 219)" }}
+                  >
+                    .
+                  </span>
                 </h1>
               </Fade>
             </div>

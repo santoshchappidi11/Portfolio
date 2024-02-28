@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(10, 10, 10);
 }
 
 #single-project{
@@ -12,8 +12,8 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: inherit;
-    background-color: black;
     color: white;
+    background-color: rgb(10, 10, 10);
     /* border: 1px solid black; */
 }
 
@@ -60,6 +60,9 @@ text-transform: capitalize;
     color: black
 }
 
+
+
+
 #top-right button{
     padding: 8px 20px;
     border: none;
@@ -67,18 +70,22 @@ text-transform: capitalize;
     border: 1px solid grey;
     border-radius: 5px;
     margin: 0 0 0 8px;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.4s ease;
     color: #ffffff;
     border: 1px solid #656565;
     cursor: pointer;
+    font-size: 15px;
     font-family: "poppins", sans-serif;
 }
+
 
 #top-right button:hover{
     background-color: #ffffff;
     color: black;
 }
+
+
 
 #project-sections{
     height: auto;

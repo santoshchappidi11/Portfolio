@@ -3,7 +3,8 @@ import "./Project.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { projectsData } from "../Data/Data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeftLong, faEye } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Project = () => {
   const { projectId } = useParams();
@@ -32,10 +33,12 @@ const Project = () => {
         </div>
         <div id="top-right">
           <a href={singleProject?.project_url}>
-            <button>Visit</button>
+            <button>Visit Live</button>
           </a>
           <a href={singleProject?.github_url}>
-            <button>Github</button>
+            <button>
+              Github <FontAwesomeIcon icon={faGithub} className="fa-lg" />
+            </button>
           </a>
         </div>
       </div>

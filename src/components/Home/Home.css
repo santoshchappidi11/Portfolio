@@ -130,6 +130,9 @@
   .intro-scroll a i {
     color: #ffffff;
   }
+
+
+
   
   .intro-scroll a:last-child {
     text-decoration: none;
@@ -369,6 +372,7 @@
  
 
   .greycolor{
-    color: grey;
+    color: rgb(152, 152, 152);
     font-style: italic;
+    /* color: rgb(219, 81, 219); */
   }
