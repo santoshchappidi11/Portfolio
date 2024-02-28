@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./StickyNavbar.css";
 import { navLinks } from "../Data/Data";
+import { useLocation } from "react-router-dom";
 
 const StickyNavbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -9,6 +10,8 @@ const StickyNavbar = () => {
   const [isHamburgerLinksToggled, setIsHamburgerLinksToggled] = useState(false);
   const [isItemClicked, setIsItemClicked] = useState("#HOME");
   // const [activeSection, setIsActiveSection] = useState("#HOME");
+
+  let location = useLocation();
 
   const handleScroll = () => {
     let offset = window.scrollY;
@@ -41,7 +44,10 @@ const StickyNavbar = () => {
     <>
       <header className={navbar ? "navbar shadow" : "navbar"}>
         <div className="intro-logo">
-          <a href="./#" className={isHamburgerClicked && "change-logo-color-1"}>
+          <a
+            href={location?.pathname != "/" ? "/" : `${location?.pathname}`}
+            className={isHamburgerClicked && "change-logo-color-1"}
+          >
             S<span>C</span>
           </a>
         </div>

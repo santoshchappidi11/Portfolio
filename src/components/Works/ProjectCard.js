@@ -32,13 +32,6 @@ const ProjectCard = ({
       onClick={() => navigateTo(`project/${id}`)}
       className="project"
       key={id}
-      // onMouseMove={handleMouseMove}
-      // onMouseLeave={handleMouseLeave}
-      // style={{
-      //   transform: `rotateX(${tilt.mouseY * 10}deg) rotateY(${
-      //     tilt.mouseX * 10
-      //   }deg)`,
-      // }}
     >
       <div className="project-image">
         <img
@@ -58,7 +51,7 @@ const ProjectCard = ({
         <div id="all-lang-logos">
           {languages?.length &&
             languages?.map((lang) => (
-              <div id="lang-logos">
+              <div id="lang-logos" key={lang}>
                 <img src={lang} alt="logos" />
               </div>
             ))}
