@@ -20,6 +20,7 @@ body{
 .left-arrow{
     font-size: 25px;
     cursor: pointer;
+    color: rgb(170, 170, 170);
 }
 
 #project-top{
@@ -41,7 +42,8 @@ body{
 }
 
 #top-left h2 {
-font-size: 25px;
+font-size: 30px;
+font-weight: 600;
 text-transform: capitalize;
 }
 
@@ -51,6 +53,11 @@ text-transform: capitalize;
     justify-content: flex-end;
     align-items: center;
     /* border: 1px solid red; */
+}
+
+#top-right a{
+    text-decoration: none;
+    color: black
 }
 
 #top-right button{
@@ -187,4 +194,62 @@ color: rgb(146, 146, 146);
 #project-features ol{
     margin: 0 18px;
     
+}
+
+.copyright-pro{
+    margin: 3rem 0;
+    /* border: 1px solid white; */
+}
+
+.copyright-pro p{
+    font-size: 0.8rem;
+    color: rgb(96, 96, 96);
+    text-align: center;
+}
+
+
+/*--------------- RESPONSIVE-------------- */
+
+@media (max-width:1175px){
+    #project-sections{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project-left{
+        width: 100%;
+    }
+
+    
+#project-left #technologies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#project-right{
+    width: 100%;
+}
+
+}
+
+@media (max-width:560px){
+    #project-top{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem 0 2rem 0;
+        /* border: 1px solid red; */
+    }
+
+    #top-right{
+        width: auto;
+    }
+}
+
+@media (max-width:350px){
+    #top-left h2 {
+        font-size: 25px;
+    }
 }

@@ -77,7 +77,7 @@ export const projectsData = [
       "like/unlike your post",
       "add/edit/delete your comment on post",
       "add/delete your stroy",
-      "profile update with profile Image and cover photo (upload/retrieve images using multer with cloudinary)",
+      "profile update (upload/retrieve images using multer with cloudinary)",
       "Search friend",
       "follow/unfollow friend",
       "see only following friend posts",

@@ -31,8 +31,12 @@ const Project = () => {
           <h2>{singleProject?.title}</h2>
         </div>
         <div id="top-right">
-          <button>Visit</button>
-          <button>Github</button>
+          <a href={singleProject?.project_url}>
+            <button>Visit</button>
+          </a>
+          <a href={singleProject?.github_url}>
+            <button>Github</button>
+          </a>
         </div>
       </div>
       <div id="project-sections">
@@ -69,6 +73,10 @@ const Project = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="copyright-pro">
+        <p>Copyright © 2024 | Made by Santosh Chappidi.</p>
       </div>
     </div>
   );

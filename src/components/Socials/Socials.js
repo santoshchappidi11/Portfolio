@@ -28,7 +28,7 @@ const Socials = () => {
             </a>
           </div>
           <div className="copyright">
-            <p>Copyright © 2024 | Made by Santosh Chappidi</p>
+            <p>Copyright © 2024 | Made by Santosh Chappidi.</p>
           </div>
         </main>
       </section>
