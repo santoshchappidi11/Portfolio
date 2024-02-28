@@ -348,8 +348,10 @@
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
+ 
 
   .greycolor{
     color: grey;
