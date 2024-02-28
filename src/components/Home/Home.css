@@ -59,7 +59,8 @@
   }
   
   .intro h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 5rem;
     /* font-weight: 700; */
   }
   
@@ -209,13 +210,19 @@
   
   /* RESPONSIVE------------------------------------ */
   @media (max-width: 1000px) {
+
+    .main {
+      margin: 0rem 0;
+    }
+
+
     .main-intro {
       margin-top: 5rem;
       margin-left: 2rem;
     }
   
     .main-intro .intro-btns {
-      flex-direction: column;
+      /* flex-direction: column; */
     }
     
     .main-intro .intro-btns a button:last-child{
@@ -236,12 +243,19 @@
   
   @media (max-width: 768px) {
 
+    .section-1 {
+      /* padding: 0rem; */
+    }
+
+  
     .main-intro .intro p {
       text-align: center;
     }
 
     .main-intro .intro h1{
       text-align: center;
+      font-size: 3rem;
+      line-height: 4rem;
     }
 
     .main{
@@ -273,16 +287,14 @@
       flex-direction: column;
     }
 
-    .main-intro .intro h1{
-      line-height: 3.2rem;
-    }
-
     .intro p::after{
       width: 2rem;
     }
-      .intro h1{
-        font-size: 2rem;
-      }
+    
+    .intro h1{
+     line-height: 2.8rem !important;
+    font-size: 2rem !important;
+    }
 
   }
   
@@ -322,12 +334,14 @@
     .main-intro .intro-scroll {
       width: 18rem;
     }
+
+
+    .intro h1{
+      line-height: 3.2rem;
+       font-size: 1rem;
+       }
+
   }
-
-  /* @media (max-width:350px){
-
-  
-  } */
   
   @media (max-width: 320px) {
     .intro-btns a button {
