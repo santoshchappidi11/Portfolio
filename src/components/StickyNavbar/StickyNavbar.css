@@ -9,7 +9,7 @@
     position: fixed;
     z-index: 10;
     transition: all 0.5s ease;
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     /* background-color: rgb(33, 33, 33); */
     /* background-color: rgba(253, 170, 16, 1); */
     /* border: 1px solid black; */
@@ -17,6 +17,7 @@
   
   .shadow {
     background-color: rgba(0,0,0, 0.9);
+    /* background-color: rgb(10, 10, 10); */
     box-shadow: 0 0.2rem 1rem 0.1rem rgb(0, 0, 0, 0.2);
   }
   

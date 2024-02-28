@@ -2,8 +2,8 @@
     height: 100%;
     width: 100%;
     padding-bottom: 2rem;
+    background-color: rgb(10, 10, 10);
     /* background-color: rgb(39, 39, 39); */
-    background-color: black;
     /* background-color: orange; */
     /* background-image: linear-gradient(to top, orange,rgb(255, 188, 63)); */
   }
