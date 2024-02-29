@@ -3,20 +3,29 @@ import "./Contact.css";
 import contactImage from "../../Images/contact.png";
 import emailjs from "@emailjs/browser";
 import { AttentionSeeker, Fade, Zoom } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
   const [isEmailSent, setIsEmailSent] = useState(false);
 
   let SubmitEmail = (
-    <button type="submit" value="Send">
+    <motion.button whileTap={{ scale: "0.95" }} type="submit" value="Send">
+      {/* <button type="submit" value="Send"> */}
       Submit
-    </button>
+      {/* </button> */}
+    </motion.button>
   );
   let sentEmail = (
-    <button type="submit" className="email-success">
+    <motion.button
+      whileTap={{ scale: "0.95" }}
+      type="submit"
+      className="email-success"
+    >
+      {/* <button type="submit" className="email-success"> */}
       Sent
-    </button>
+      {/* </button> */}
+    </motion.button>
   );
 
   useEffect(() => {

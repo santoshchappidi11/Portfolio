@@ -4,6 +4,7 @@ import heroImage from "../../Images/hero.png";
 import { Fade } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
 import { Zoom } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const sectionRef = useRef(null);
@@ -19,6 +20,8 @@ const Home = () => {
       );
     }
   }, []);
+
+  const text = <></>;
 
   return (
     <>
@@ -45,10 +48,16 @@ const Home = () => {
             <div className="intro-btns">
               <Fade cascade delay={1500} triggerOnce>
                 <a href="#Works">
-                  <button>Latest Projects</button>
+                  {/* <button>Latest Projects</button> */}
+                  <motion.button whileTap={{ scale: 0.85 }}>
+                    Latest Projects
+                  </motion.button>
                 </a>
                 <a href="#About">
-                  <button>More About Me</button>
+                  {/* <button>More About Me</button> */}
+                  <motion.button whileTap={{ scale: 0.85 }}>
+                    More About Me
+                  </motion.button>
                 </a>
               </Fade>
             </div>
@@ -61,7 +70,10 @@ const Home = () => {
                   <i className="fab fa-linkedin fa-2x"></i>
                 </a>
                 <a href="https://drive.google.com/uc?export=download&id=1cTE1AAmVXyGXZ1_8afJO0jqSsMhcuJKp">
-                  <button>Resume</button>
+                  {/* <button>Resume</button> */}
+                  <motion.button whileTap={{ scale: 0.9 }}>
+                    Resume
+                  </motion.button>
                 </a>
                 <a href="#About">
                   SCROLL DOWN{" "}

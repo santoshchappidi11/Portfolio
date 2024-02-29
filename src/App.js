@@ -9,20 +9,6 @@ import Socials from "./components/Socials/Socials";
 import { Route, Routes } from "react-router-dom";
 import Project from "./components/Projects/Project.js";
 
-// const scrollabeContent = () => {};
-
-const ScrollableContent = () => {
-  return (
-    <div>
-      <Home />
-      <About />
-      <Works />
-      <Contact />
-      <Socials />
-    </div>
-  );
-};
-
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 

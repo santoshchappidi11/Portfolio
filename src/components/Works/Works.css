@@ -92,7 +92,7 @@
     border-radius: 0.5rem;
     color: white;
     backdrop-filter: blur(8px);
-    cursor: pointer;
+    /* cursor: pointer; */
     /* background-color: rgb(32, 32, 32); */
     background-color: rgb(28, 28, 28);
     transition: transform 0.3s ease-out;
@@ -116,6 +116,7 @@
     align-items: center;
     border-radius: 0.5rem;
     padding: 0.8rem 1rem 0rem 1rem;
+    cursor: pointer;
     /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     /* border: 1px solid black; */
   }

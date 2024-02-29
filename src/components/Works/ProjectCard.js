@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Works.css";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({
   id,
@@ -28,12 +29,11 @@ const ProjectCard = ({
   // };
 
   return (
-    <div
-      onClick={() => navigateTo(`project/${id}`)}
-      className="project"
-      key={id}
-    >
-      <div className="project-image">
+    <div className="project" key={id}>
+      <div
+        className="project-image"
+        onClick={() => navigateTo(`project/${id}`)}
+      >
         <img
           src={image}
           alt="project-images"
@@ -59,12 +59,14 @@ const ProjectCard = ({
         <div className="project-buttons">
           <div className="project-button">
             <a href={project_url}>
-              <button>View</button>
+              {/* <button>View</button> */}
+              <motion.button whileTap={{ scale: "0.85" }}>View</motion.button>
             </a>
           </div>
           <div className="project-button">
             <a href={github_url}>
-              <button>Github</button>
+              {/* <button>Github</button> */}
+              <motion.button whileTap={{ scale: "0.85" }}>Github</motion.button>
             </a>
           </div>
         </div>

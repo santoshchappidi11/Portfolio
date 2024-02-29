@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./StickyNavbar.css";
 import { navLinks } from "../Data/Data";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const StickyNavbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -54,7 +55,14 @@ const StickyNavbar = () => {
         <div className="nav-links">
           <a href="#Contact">
             {" "}
-            <span>Contact me!</span>
+            {/* <button>
+                Contact me!
+                </button> */}
+            <motion.button className="button" whileTap={{ scale: 0.85 }}>
+              {/* <button> */}
+              Contact me!
+              {/* </button> */}
+            </motion.button>
           </a>
           {/* <ul>
             {links.map((link) => {
