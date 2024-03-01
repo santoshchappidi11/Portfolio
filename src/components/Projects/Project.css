@@ -12,7 +12,7 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: inherit;
-    color: white;
+    color: rgb(225, 225, 225);
     background-color: rgb(10, 10, 10);
     /* border: 1px solid black; */
 }
@@ -45,6 +45,7 @@ body{
 font-size: 30px;
 font-weight: 600;
 text-transform: capitalize;
+color: #ffffff;
 }
 
 #top-right{
@@ -171,7 +172,7 @@ text-transform: capitalize;
     font-weight: 600;
     font-size: 20px;
     margin: 10px 0;
-    color: rgb(235, 235, 235);
+    color: rgb(225, 225, 225);
 }
 
 #project-status{
@@ -207,7 +208,7 @@ color: rgb(146, 146, 146);
 #main-logo{
     height: 20px;
     width: 20px;
-    margin: 5px 2px 2px 0;
+    margin: 5px 8px 5px 0;
 }
 
 #main-logo img{
@@ -217,8 +218,13 @@ color: rgb(146, 146, 146);
 }
 
 #main-features{
-    display: flex;
+    /* display: flex; */
 
+}
+
+#features{
+    display: flex;
+    /* border: 1px solid white; */
 }
 
 #project-features h4{
@@ -228,15 +234,11 @@ color: rgb(146, 146, 146);
 }
 
 
-#project-features ul{
-    margin: 0 18px;
-    /* list-style:  url("../../Images/dot.png"); */
-    
-    
-}
 
-#project-features ul li{
-    margin: 0.2rem 0;
+
+#main-features span {
+    text-transform: capitalize;
+    margin: 0.2rem 0 0 0;
 }
 
 

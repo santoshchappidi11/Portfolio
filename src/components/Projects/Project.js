@@ -22,6 +22,10 @@ const Project = () => {
     }
   }, [projectId]);
 
+  const { logos } = singleProject;
+
+  // console.log(logos, "logos here");
+
   return (
     <Fade cascade delay={200} triggerOnce>
       <div id="single-project">
@@ -84,20 +88,29 @@ const Project = () => {
                 <div id="project-features">
                   <h4>Features</h4>
                   <div id="main-features">
-                    <div id="logos">
+                    {/* <div id="logos">
                       {singleProject?.logos?.map((item) => (
                         <div id="main-logo">
                           <img src={item} alt="logo" />
                         </div>
                       ))}
-                    </div>
-                    <ul>
-                      {singleProject?.features?.map((item) => (
-                        <>
-                          <li>{item}</li>
-                        </>
-                      ))}
-                    </ul>
+                    </div> */}
+
+                    {singleProject?.features?.map((item, index) => {
+                      const mainLogo = logos && logos[index];
+
+                      return (
+                        <div id="features">
+                          <div id="logos">
+                            <div id="main-logo">
+                              <img src={mainLogo} alt="logo" />
+                            </div>
+                          </div>
+                          <span>{item}</span>
+                          {/* <li>{item}</li> */}
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
