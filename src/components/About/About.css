@@ -18,11 +18,15 @@
     /* border: 1px solid white; */
   }
   
+.main-header{
+  display: flex;
+}
+
   .about-header h4 {
     font-size: 1.1rem;
     text-transform: uppercase;
-    color: white;
     color: orange;
+    /* border: 1px solid white; */
   }
   
   .about-header h1 {
@@ -139,12 +143,13 @@
     /* border: 1px solid white; */
   }
   
-  .content-skills h2 {
+  .content-skills h3 {
     /* color: white; */
     color: rgb(205, 0, 205);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 1.3rem;
     margin: 0 0 1rem 0;
   }
   

@@ -21,8 +21,6 @@ const Home = () => {
     }
   }, []);
 
-  const text = <></>;
-
   return (
     <>
       <section id="Home" className="section-1" ref={sectionRef}>

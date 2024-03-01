@@ -68,7 +68,7 @@ const About = () => {
             </div>
             <div className="content-skills">
               <AttentionSeeker effect="pulse">
-                <h2>Skills</h2>
+                <h3>Skills</h3>
               </AttentionSeeker>
               <div className="skills">
                 <Fade cascade>

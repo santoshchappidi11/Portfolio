@@ -37,7 +37,11 @@ const Project = () => {
           <div id="top-right">
             <a href={singleProject?.project_url}>
               {/* <button> */}
-              <motion.button whileTap={{ scale: "0.85" }}>
+              <motion.button
+                whileTap={{ scale: "0.85" }}
+                id="visit"
+                // style={{ backgroundColor: "white", color: "black" }}
+              >
                 Visit Live
               </motion.button>
               {/* </button> */}
@@ -79,11 +83,22 @@ const Project = () => {
                 </div>
                 <div id="project-features">
                   <h4>Features</h4>
-                  <ol>
-                    {singleProject?.features?.map((item) => (
-                      <li>{item}</li>
-                    ))}
-                  </ol>
+                  <div id="main-features">
+                    <div id="logos">
+                      {singleProject?.logos?.map((item) => (
+                        <div id="main-logo">
+                          <img src={item} alt="logo" />
+                        </div>
+                      ))}
+                    </div>
+                    <ul>
+                      {singleProject?.features?.map((item) => (
+                        <>
+                          <li>{item}</li>
+                        </>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </Fade>

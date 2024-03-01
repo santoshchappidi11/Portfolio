@@ -16,6 +16,17 @@ import mongoImg from "../../Images/mongodb.png";
 import nodeImg from "../../Images/node-js.png";
 import tailwindImg from "../../Images/tailwind.png";
 
+import searchLogo from "../../Images/search.png";
+import loginLogo from "../../Images/login.png";
+import addLogo from "../../Images/plus.png";
+import deleteLogo from "../../Images/delete.png";
+import storyLogo from "../../Images/story.png";
+import followLogo from "../../Images/add-users.png";
+import profileLogo from "../../Images/profile.png";
+import postLogo from "../../Images/post.png";
+import likeLogo from "../../Images/like.png";
+import followPostsLogo from "../../Images/image.png";
+
 export const navLinks = [
   {
     id: 1,
@@ -69,6 +80,19 @@ export const projectsData = [
     github_url: "https://github.com/santoshchappidi11/facebook-react-clone",
     image: facebookImage,
     description: "Social Media website built using MERN",
+    logos: [
+      loginLogo,
+      loginLogo,
+      addLogo,
+      deleteLogo,
+      likeLogo,
+      storyLogo,
+      profileLogo,
+      searchLogo,
+      followLogo,
+      followPostsLogo,
+      addLogo,
+    ],
     features: [
       "login",
       "register",
@@ -76,7 +100,7 @@ export const projectsData = [
       "delete post",
       "like/unlike your post",
       "add/edit/delete your comment on post",
-      "add/delete your stroy",
+      "add/delete your story",
       "profile update (upload/retrieve images using multer with cloudinary)",
       "Search friend",
       "follow/unfollow friend",
