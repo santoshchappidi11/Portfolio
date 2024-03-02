@@ -26,6 +26,14 @@ import profileLogo from "../../Images/profile.png";
 import postLogo from "../../Images/post.png";
 import likeLogo from "../../Images/like.png";
 import followPostsLogo from "../../Images/image.png";
+import commentLogo from "../../Images/comment.png";
+import cartLogo from "../../Images/cart.png";
+import removeCartLogo from "../../Images/remove-cart.png";
+import stripeLogo from "../../Images/payment.png";
+import editLogo from "../../Images/edit.png";
+import deleteAllLogo from "../../Images/delete-all.png";
+import retrieveLogo from "../../Images/rotate.png";
+import checkoutLogo from "../../Images/checkout.png";
 
 export const navLinks = [
   {
@@ -58,6 +66,17 @@ export const projectsData = [
     github_url: "https://github.com/santoshchappidi11/meesho-react-clone",
     image: meeshoImage,
     description: "E-Commerce website built using MERN",
+    logos: [
+      loginLogo,
+      loginLogo,
+      addLogo,
+      deleteLogo,
+      editLogo,
+      cartLogo,
+      removeCartLogo,
+      stripeLogo,
+      profileLogo,
+    ],
     features: [
       "login",
       "register",
@@ -83,15 +102,15 @@ export const projectsData = [
     logos: [
       loginLogo,
       loginLogo,
-      addLogo,
+      postLogo,
       deleteLogo,
       likeLogo,
-      likeLogo,
-      searchLogo,
+      commentLogo,
+      storyLogo,
       profileLogo,
+      searchLogo,
       followLogo,
       followPostsLogo,
-      addLogo,
     ],
     features: [
       "login",
@@ -117,6 +136,16 @@ export const projectsData = [
     github_url: "https://github.com/santoshchappidi11/Task-Management-App",
     image: taskImage,
     description: "Task Management website built using MERN",
+    logos: [
+      loginLogo,
+      loginLogo,
+      addLogo,
+      editLogo,
+      deleteLogo,
+      deleteAllLogo,
+      retrieveLogo,
+      retrieveLogo,
+    ],
     features: [
       "login",
       "register",
@@ -150,6 +179,7 @@ export const projectsData = [
     github_url: "https://github.com/santoshchappidi11/weather-app-react",
     image: shoppingImage,
     description: "Shopping Cart built with React JS",
+    logos: [cartLogo, cartLogo, removeCartLogo, searchLogo, checkoutLogo],
     features: [
       "filter products",
       "add to cart",
