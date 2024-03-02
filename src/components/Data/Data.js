@@ -34,6 +34,10 @@ import editLogo from "../../Images/edit.png";
 import deleteAllLogo from "../../Images/delete-all.png";
 import retrieveLogo from "../../Images/rotate.png";
 import checkoutLogo from "../../Images/checkout.png";
+import filterLogo from "../../Images/filter.png";
+import cityLogo from "../../Images/city.png";
+import forecastLogo from "../../Images/forecast.png";
+import countryLogo from "../../Images/country.png";
 
 export const navLinks = [
   {
@@ -167,6 +171,7 @@ export const projectsData = [
     project_url: "https://weather-application-03.netlify.app/",
     github_url: "https://github.com/santoshchappidi11/weather-app-react",
     description: "Weather Application built with React JS",
+    logos: [cityLogo, countryLogo, forecastLogo],
     features: ["search city", "search country", "five days forecast"],
     languages: [reactImg, cssImg],
     view: "View",
@@ -179,7 +184,7 @@ export const projectsData = [
     github_url: "https://github.com/santoshchappidi11/weather-app-react",
     image: shoppingImage,
     description: "Shopping Cart built with React JS",
-    logos: [cartLogo, cartLogo, removeCartLogo, searchLogo, checkoutLogo],
+    logos: [filterLogo, cartLogo, removeCartLogo, searchLogo, checkoutLogo],
     features: [
       "filter products",
       "add to cart",

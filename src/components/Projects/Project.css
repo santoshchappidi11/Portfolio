@@ -59,7 +59,7 @@ color: #ffffff;
 
 #top-right a{
     text-decoration: none;
-    color: black
+    color: black;
 }
 
 
@@ -206,8 +206,8 @@ color: rgb(146, 146, 146);
 }
 
 #main-logo{
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     margin: 5px 8px 5px 0;
 }
 
@@ -244,7 +244,7 @@ color: rgb(146, 146, 146);
 
 
 .copyright-pro{
-    margin: 3rem 0;
+    margin: 3rem 2rem;
     /* border: 1px solid white; */
 }
 
@@ -330,11 +330,20 @@ color: rgb(146, 146, 146);
 #top-right{
     width: 100%;
     flex-direction: column;
-    /* margin: 1rem 0 0 0; */
+    align-items: flex-start;
+    margin: 1rem 0 0 0;
 }
 
 #top-right button{
     margin: 0 0 0.5rem 0;
+}
+
+#top-left h2 {
+    margin: 1rem 0;
+}
+
+#project-sections{
+    margin: 4rem 0;
 }
 
 }
