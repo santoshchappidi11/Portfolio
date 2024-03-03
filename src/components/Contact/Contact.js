@@ -4,6 +4,9 @@ import contactImage from "../../Images/contact.png";
 import emailjs from "@emailjs/browser";
 import { AttentionSeeker, Fade, Zoom } from "react-awesome-reveal";
 import { motion } from "framer-motion";
+import location from "../../Images/location.png";
+import mail from "../../Images/mail.png";
+import sendMsg from "../../Images/sendmessage.png";
 
 const Contact = () => {
   const form = useRef();
@@ -12,7 +15,10 @@ const Contact = () => {
   let SubmitEmail = (
     <motion.button whileTap={{ scale: "0.95" }} type="submit" value="Send">
       {/* <button type="submit" value="Send"> */}
-      Submit
+      <div id="send-msg">
+        <img src={sendMsg} alt="message" />
+      </div>
+      Send Message
       {/* </button> */}
     </motion.button>
   );
@@ -118,11 +124,17 @@ const Contact = () => {
                 <span>(+91) 8356015803</span>
               </label> */}
               <label>
-                <i className="fas fa-envelope fa-1x"></i>
+                {/* <i className="fas fa-envelope fa-1x"></i> */}
+                <div>
+                  <img src={mail} alt="mail" />
+                </div>
                 <span>santoshchappidi03@gmail.com</span>
               </label>
               <label>
-                <i className="fas fa-map-marker-alt fa-1x"></i>
+                {/* <i className="fas fa-map-marker-alt fa-1x"></i> */}
+                <div>
+                  <img src={location} alt="location" />
+                </div>
                 <span> Chembur Mumbai-400074.</span>
               </label>
             </div>

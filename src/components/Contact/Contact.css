@@ -130,7 +130,8 @@
   .form form button,
   .email-success {
     font-family: 'poppins';
-    padding: 0.8rem 9rem;
+    padding: 0.8rem 0;
+    width: 22rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -140,6 +141,9 @@
     border-radius: 0.4rem;
     border: 1px solid #656565;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color: rgb(240, 239, 239); */
     transition: all 0.3s ease;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -151,10 +155,24 @@
   }
   
   .email-success {
-    padding: 0.8rem 9.5rem !important;
+    /* padding: 0.8rem 9.5rem !important; */
+    width: 22rem !important;
     background-color: lightgreen !important;
     border: 1px solid lightgreen !important;
     color: rgb(0, 0, 0);
+  }
+
+  button #send-msg{
+    height: 25px;
+    width: 25px;
+    margin: 0 1rem;
+  }
+
+  
+  button #send-msg img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
   
   .contact-details {
@@ -170,6 +188,7 @@
   .contact-details .contact-img {
     height: 50%;
     width: 100%;
+
     /* border: 1px solid black; */
   }
   
@@ -217,6 +236,20 @@
   
   .contact-details .details label {
     color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid white; */
+  }
+
+  .details label div{
+      height: 24px;
+      width: 24px;
+  }
+
+  .details label div img{
+    height: 100%;
+    width: 100%;
   }
   
   .contact-details .details span {
@@ -235,7 +268,8 @@
     }
   
     .form form button {
-      padding: 0.6rem 8rem;
+      /* padding: 0.6rem 8rem; */
+      width: 20rem;
     }
   }
   
@@ -246,9 +280,19 @@
     }
   
     .contact-details {
-      width: 80%;
+      width: 50%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
       align-items: center;
     }
+
+      
+  .contact-img img {
+    /* border: 1px solid white; */
+    width: 100%;
+    margin-left: 0;
+  }
   
     .contact-details .details {
       /* width: 100%; */
@@ -273,16 +317,36 @@
   }
   
   @media (max-width: 416px) {
+
+
     .contact-details {
-      margin-right: 2rem;
+      width: 80%;
     }
+
+   
     
     .contact-details .details {
-      margin-left: 2rem;
+      /* margin-left: 2rem; */
     }
     .contact-details .details label {
       /* width: 100%; */
       display: flex;
     }
+  }
+
+  @media (max-width:350px) {
+    .form form input {
+      width: 15rem;
+    }
+
+    .form form textarea {
+      width: 15rem;
+    }
+
+    .form form button,
+    .email-success {
+      width: 15rem;
+    }
+
   }
   
