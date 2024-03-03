@@ -3,6 +3,7 @@ import "./StickyNavbar.css";
 import { navLinks } from "../Data/Data";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import callLogo from "../../Images/sentmessage.png";
 
 const StickyNavbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -10,7 +11,16 @@ const StickyNavbar = () => {
   const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
   const [isHamburgerLinksToggled, setIsHamburgerLinksToggled] = useState(false);
   const [isItemClicked, setIsItemClicked] = useState("#HOME");
+  const [contactHover, setContactHover] = useState(false);
   // const [activeSection, setIsActiveSection] = useState("#HOME");
+
+  const callAnimation = () => {
+    setContactHover(true);
+  };
+
+  const stopCallAnimation = () => {
+    setContactHover(false);
+  };
 
   let location = useLocation();
 
@@ -58,10 +68,22 @@ const StickyNavbar = () => {
             {/* <button>
                 Contact me!
                 </button> */}
-            <motion.button className="button" whileTap={{ scale: 0.85 }}>
+            <motion.button
+              className="button"
+              whileTap={{ scale: 0.85 }}
+              onMouseOver={() => callAnimation()}
+              onMouseLeave={() => stopCallAnimation()}
+            >
               {/* <button> */}
               Contact me!
               {/* </button> */}
+              <div
+                className={`${
+                  contactHover ? "call-logo call-logo-animate" : "call-logo "
+                }`}
+              >
+                <img src={callLogo} alt="call" />
+              </div>
             </motion.button>
           </a>
           {/* <ul>
