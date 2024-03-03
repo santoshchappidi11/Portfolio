@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import location from "../../Images/location.png";
 import mail from "../../Images/mail.png";
 import sendMsg from "../../Images/sendmessage.png";
+import sentMsg from "../../Images/sentmessage.png";
 
 const Contact = () => {
   const form = useRef();
@@ -29,6 +30,9 @@ const Contact = () => {
       className="email-success"
     >
       {/* <button type="submit" className="email-success"> */}
+      <div id="sent-msg">
+        <img src={sentMsg} alt="message" />
+      </div>
       Sent
       {/* </button> */}
     </motion.button>
@@ -37,7 +41,7 @@ const Contact = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsEmailSent(false);
-    }, 2000);
+    }, 5000);
   }, [isEmailSent]);
 
   const sendEmail = (e) => {
@@ -78,38 +82,40 @@ const Contact = () => {
         <main className="contact-content">
           <div className="form">
             <Fade delay={600}>
-              <form ref={form} onSubmit={sendEmail}>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Name"
-                  name="user_name"
-                  required
-                />
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email"
-                  name="user_email"
-                  required
-                />
-                <input
-                  type="text"
-                  id="subject"
-                  placeholder="Subject"
-                  name="subject"
-                  required
-                />
-                <textarea
-                  type="text"
-                  id="message"
-                  placeholder="Message"
-                  name="message"
-                  required
-                />
-                {!isEmailSent && SubmitEmail}
-                {isEmailSent && sentEmail}
-              </form>
+              <>
+                <form ref={form} onSubmit={sendEmail}>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                    name="user_name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    name="user_email"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    name="subject"
+                    required
+                  />
+                  <textarea
+                    type="text"
+                    id="message"
+                    placeholder="Message"
+                    name="message"
+                    required
+                  />
+                  {!isEmailSent && SubmitEmail}
+                  {isEmailSent && sentEmail}
+                </form>
+              </>
             </Fade>
           </div>
           <div className="contact-details">
@@ -135,7 +141,7 @@ const Contact = () => {
                 <div>
                   <img src={location} alt="location" />
                 </div>
-                <span> Chembur Mumbai-400074.</span>
+                <span>Chembur Mumbai-400074.</span>
               </label>
             </div>
           </div>

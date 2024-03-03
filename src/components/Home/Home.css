@@ -33,7 +33,7 @@
     /* border: 1px solid white; */
     /* color: #ffffff; */
   }
-
+  
   .main-intro .intro{
     text-align: center;
   }
@@ -71,7 +71,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
   }
   
   .intro-btns a {
@@ -105,11 +105,13 @@
   .intro-btns a:last-child button{
     padding: 1rem 2.3rem;
   }
+
+
   
   .main-intro .intro-scroll {
-    padding-top: 5rem;
     height: auto;
-    width: 25rem;
+    width: 100%;
+    padding-top: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;

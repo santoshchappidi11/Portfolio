@@ -39,6 +39,7 @@
     line-height: 5rem;
     font-weight: 600;
     color: white;
+    text-align: center;
   }
   
   .about-header p::after {
@@ -294,5 +295,11 @@
       
   .content-skills .skills {
     justify-content: center;
+  }
+}
+
+@media (max-width:290px) {
+  .about-header p{
+    line-height: 35px;    /* width: 100%; */
   }
 }

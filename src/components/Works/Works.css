@@ -27,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     padding-top: 5rem;
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
   }
   
   .works-header h4 {
@@ -251,7 +251,7 @@
   
   @media (max-width: 700px) {
     .works-header {
-      width: 60%;
+      width: 80%;
     }
     .works-header p {
       padding-top: 2rem;
