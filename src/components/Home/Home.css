@@ -61,7 +61,7 @@
   .intro h1 {
     font-size: 4rem;
     line-height: 5rem;
-    /* font-weight: 700; */
+    font-weight: 400;
   }
   
   .main-intro .intro-btns {
@@ -363,6 +363,7 @@
   
 
   .multicolor{
+    font-weight: 600 !important;
     background-image: linear-gradient(to left, rgb(255, 38, 233), red, orange);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -376,5 +377,6 @@
   .greycolor{
     color: rgb(152, 152, 152);
     font-style: italic;
+    font-weight: 600 !important;
     /* color: rgb(219, 81, 219); */
   }
