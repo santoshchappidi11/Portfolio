@@ -111,7 +111,7 @@
   }
 
   .call-logo-animate{
-    animation: callmsg 1.5s infinite linear;
+    animation: callmsg 1.5s linear forwards;
   }
 
 
@@ -119,14 +119,11 @@
     0%{
       transform: translateX(0%);
     }50%{
-      transform: translateX(50%);
-    }
-    75%{
-      transform: translateX(100%);
+      opacity: 0.5;
+      transform: translateX(150%);
     }
     100%{
-      opacity: 0.2;
-      transform: translateX(150%);
+      transform: translateX(0%);
     }
   }
 
