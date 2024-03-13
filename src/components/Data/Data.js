@@ -1,15 +1,15 @@
 import landingPageImage from "../../Images/landing-page.png";
-import weatherAppImage from "../../Images/weather-app.png";
 import calculatorAppImage from "../../Images/calculator-app.png";
 import todoAppImage from "../../Images/todo-app.png";
+import weatherAppImage from "../../Images/weather-app.png";
 import shoppingImage from "../../Images/headphones-shopping.png";
 import facebookImage from "../../Images/facebook.png";
-import meeshoImage from "../../Images/meesho.png";
+import ushopImage from "../../Images/ushop.png";
 import taskImage from "../../Images/task-management.png";
 
 import htmlImg from "../../Images/html-5.png";
-import cssImg from "../../Images/css-3.png";
 import jsImg from "../../Images/js.png";
+import cssImg from "../../Images/css-3.png";
 import reactImg from "../../Images/react.png";
 import expressImg from "../../Images/express.png";
 import mongoImg from "../../Images/mongodb.png";
@@ -65,10 +65,10 @@ export const navLinks = [
 export const projectsData = [
   {
     id: 1,
-    title: "meesho clone",
+    title: "U SHOP",
     project_url: "https://meesho-clone-03.netlify.app/",
     github_url: "https://github.com/santoshchappidi11/meesho-react-clone",
-    image: meeshoImage,
+    image: ushopImage,
     description: "E-Commerce website built using MERN",
     logos: [
       loginLogo,
@@ -98,7 +98,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "facebook clone",
+    title: "connect",
     project_url: "https://facebook-clone-03.netlify.app/",
     github_url: "https://github.com/santoshchappidi11/facebook-react-clone",
     image: facebookImage,

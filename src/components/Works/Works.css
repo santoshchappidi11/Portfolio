@@ -92,11 +92,11 @@
     border-radius: 0.5rem;
     color: white;
     backdrop-filter: blur(8px);
-    /* cursor: pointer; */
-    /* background-color: rgb(32, 32, 32); */
     background-color: rgb(28, 28, 28);
     transition: transform 0.3s ease-out;
     box-shadow: rgba(27, 27, 27, 0.25) 0px 30px 60px -12px inset, rgba(27, 27, 27, 0.3) 0px 18px 36px -18px inset;
+    /* cursor: pointer; */
+    /* background-color: rgb(32, 32, 32); */
     /* transform-style: preserve-3d; */
     /* background-color: rgb(45, 45, 45); */
     /* border: 1px solid rgb(255, 255, 255); */
@@ -109,16 +109,16 @@
   }
    
   .project-image {
-    height: 15rem;
+    height: 12rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    padding: 0.8rem 1rem 0rem 1rem;
+    padding:0 0.5rem;
     cursor: pointer;
     /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
   }
   
   .project-image > img {
@@ -126,8 +126,9 @@
     width: 100%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    /* filter: contrast(120%); */
     object-fit:contain;
+    /* filter: contrast(120%); */
+    /* border: 1px solid white; */
   }
 
   .project-description {
@@ -142,8 +143,8 @@
   }
   
   .project-description h2 {
-    font-weight: 600;
-    /* padding-bottom: 0.6rem; */
+    font-weight: 500;
+    padding-bottom: 0.4rem;
     text-transform:capitalize;
     color: #ffffff;
     /* color: rgb(255, 113, 5); */
