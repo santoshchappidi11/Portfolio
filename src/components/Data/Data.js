@@ -1,14 +1,15 @@
-import landingPageImage from "../../Images/landing-page.png";
-import calculatorAppImage from "../../Images/calculator-app.png";
-import todoAppImage from "../../Images/todo-app.png";
+// import landingPageImage from "../../Images/landing-page.png";
+// import calculatorAppImage from "../../Images/calculator-app.png";
+// import todoAppImage from "../../Images/todo-app.png";
+// import facebookImage from "../../Images/facebook.png";
 import weatherAppImage from "../../Images/weather-app.png";
 import shoppingImage from "../../Images/headphones-shopping.png";
-import facebookImage from "../../Images/facebook.png";
 import ushopImage from "../../Images/ushop.png";
 import taskImage from "../../Images/task-management.png";
+import connectImage from "../../Images/connect.png";
 
-import htmlImg from "../../Images/html-5.png";
-import jsImg from "../../Images/js.png";
+// import htmlImg from "../../Images/html-5.png";
+// import jsImg from "../../Images/js.png";
 import cssImg from "../../Images/css-3.png";
 import reactImg from "../../Images/react.png";
 import expressImg from "../../Images/express.png";
@@ -101,7 +102,7 @@ export const projectsData = [
     title: "connect",
     project_url: "https://facebook-clone-03.netlify.app/",
     github_url: "https://github.com/santoshchappidi11/facebook-react-clone",
-    image: facebookImage,
+    image: connectImage,
     description: "Social Media website built using MERN",
     logos: [
       loginLogo,
