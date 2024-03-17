@@ -67,8 +67,8 @@ export const projectsData = [
   {
     id: 1,
     title: "U SHOP",
-    project_url: "https://meesho-clone-03.netlify.app/",
-    github_url: "https://github.com/santoshchappidi11/meesho-react-clone",
+    project_url: "https://ushop-03.netlify.app/",
+    github_url: "https://github.com/santoshchappidi11/u-shop",
     image: ushopImage,
     description: "E-Commerce website built using MERN",
     logos: [
@@ -100,8 +100,8 @@ export const projectsData = [
   {
     id: 2,
     title: "connect",
-    project_url: "https://facebook-clone-03.netlify.app/",
-    github_url: "https://github.com/santoshchappidi11/facebook-react-clone",
+    project_url: "https://connect-03.netlify.app/",
+    github_url: "https://github.com/santoshchappidi11/connect",
     image: connectImage,
     description: "Social Media website built using MERN",
     logos: [
