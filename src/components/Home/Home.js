@@ -68,7 +68,7 @@ const Home = () => {
               <a href="https://www.linkedin.com/in/santosh-chappidi-a98b59215">
                 <i className="fab fa-linkedin fa-2x"></i>
               </a>
-              <a href="https://drive.google.com/file/d/1FtEpOg7Xdj4YOeoaK3XY8KSIckdOXuhE/view?usp=drive_link">
+              <a href="https://drive.google.com/file/d/1FtEpOg7Xdj4YOeoaK3XY8KSIckdOXuhE/view?usp=sharing">
                 {/* <button>Resume</button> */}
                 <motion.button
                   whileTap={{ scale: 0.9 }}
