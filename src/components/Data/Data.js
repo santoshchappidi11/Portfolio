@@ -184,7 +184,7 @@ export const projectsData = [
     id: 5,
     title: "shopping cart",
     project_url: "https://headphones-shopping.netlify.app/",
-    github_url: "https://github.com/santoshchappidi11/weather-app-react",
+    github_url: "https://github.com/santoshchappidi11/shopping-cart",
     image: shoppingImage,
     description: "Shopping Cart built with React JS",
     logos: [filterLogo, cartLogo, removeCartLogo, searchLogo, checkoutLogo],
