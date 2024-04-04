@@ -1,9 +1,9 @@
 import React, { memo, useEffect, useRef } from "react";
 import "./Home.css";
-import heroImage from "../../Images/hero.png";
+// import heroImage from "../../Images/hero.png";
 import { Fade } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
-import { Zoom } from "react-awesome-reveal";
+// import { Zoom } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 import downloadLogo from "../../Images/download-resume.png";
 const Home = () => {
