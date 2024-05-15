@@ -13,7 +13,7 @@ import connectImage from "../../Images/connect.png";
 import cssImg from "../../Images/css-3.png";
 import reactImg from "../../Images/react.png";
 import expressImg from "../../Images/express.png";
-import mongoImg from "../../Images/mongodb.png";
+import mongodbImg from "../../Images/mongodb.png";
 import nodeImg from "../../Images/node-js.png";
 import tailwindImg from "../../Images/tailwind.png";
 
@@ -95,7 +95,7 @@ export const projectsData = [
       "stripe payment integration",
       "profile update",
     ],
-    languages: [reactImg, nodeImg, expressImg, mongoImg],
+    languages: [reactImg, nodeImg, expressImg, mongodbImg],
     view: "View",
     code: "Code",
   },
@@ -132,7 +132,7 @@ export const projectsData = [
       "follow/unfollow friend",
       "see only following friend posts",
     ],
-    languages: [reactImg, nodeImg, expressImg, mongoImg],
+    languages: [reactImg, nodeImg, expressImg, mongodbImg],
     view: "View",
     code: "Code",
   },
@@ -163,7 +163,7 @@ export const projectsData = [
       "retrieve deleted tasks",
       "retrieve completed tasks",
     ],
-    languages: [reactImg, tailwindImg, nodeImg, expressImg, mongoImg],
+    languages: [reactImg, tailwindImg, nodeImg, expressImg, mongodbImg],
     view: "View",
     code: "Code",
   },
