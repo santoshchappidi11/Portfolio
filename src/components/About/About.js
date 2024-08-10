@@ -1,16 +1,17 @@
 import React, { useEffect, useRef } from "react";
 import "./About.css";
-import skillsImage from "../../Images/skills.png";
 import htmlImg from "../../Images/html-5.png";
 import cssImg from "../../Images/css-3.png";
+import tailwindcss from "../../Images/tailwind.png";
 import jsImg from "../../Images/js.png";
 import reactImg from "../../Images/react.png";
+import nextImg from "../../Images/next-js.png";
 import expressImg from "../../Images/express.png";
 import mongoImg from "../../Images/mongodb.png";
 import nodeImg from "../../Images/node-js.png";
 import gitImg from "../../Images/git.png";
 import githubImg from "../../Images/github.png";
-import { AttentionSeeker, Fade, Zoom } from "react-awesome-reveal";
+import { AttentionSeeker, Fade } from "react-awesome-reveal";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -86,6 +87,12 @@ const About = () => {
                   </div>
                   <div className="badge">
                     <div id="skills-img">
+                      <img src={tailwindcss} alt="css" />
+                    </div>
+                    <h4>Tailwind CSS</h4>
+                  </div>
+                  <div className="badge">
+                    <div id="skills-img">
                       <img src={jsImg} alt="JS" />
                     </div>
                     <h4>JAVASCRIPT</h4>
@@ -96,6 +103,12 @@ const About = () => {
                     </div>
                     <h4>REACT JS</h4>
                   </div>
+                  {/* <div className="badge">
+                    <div id="skills-img">
+                      <img src={nextImg} alt="react" id="next" />
+                    </div>
+                    <h4>Next JS</h4>
+                  </div> */}
                   <div className="badge">
                     <div id="skills-img">
                       <img src={expressImg} alt="express" />

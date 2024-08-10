@@ -247,6 +247,20 @@
   /* border: 1px solid white; */
 }
 
+.react-animate{
+  animation: reactRotate 6s infinite linear;
+}
+
+  @keyframes reactRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
   
   /* RESPONSIVE--------------- */
   

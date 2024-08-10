@@ -2,6 +2,19 @@ body{
     background-color: rgb(10, 10, 10);
 }
 
+.react-animate{
+  animation: reactRotate 6s infinite linear;
+}
+
+  @keyframes reactRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 #single-project{
     height: 100%;
     width: 100%;
@@ -187,13 +200,21 @@ color: rgb(146, 146, 146);
 }
 
 #project-status p{
-    width: 54px;
+    font-size: 15px;
+    width: auto;
     text-align: center;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 500;
     background-color: rgb(15, 208, 83);
     color: rgb(243, 243, 243);
+    padding: 1px 0px;
     /* border: 1px solid red; */
+}
+
+#status-icon{
+  font-size: 12px;
+  color: red;
+  margin-right: 2px;
 }
 
 
@@ -260,11 +281,17 @@ color: rgb(146, 146, 146);
     display: flex;
 }
 
+
 /*--------------- RESPONSIVE-------------- */
 
 @media (max-width:1485px){
     #top-right{
         width: 50%;
+    }
+
+    #project-status p{
+      width: 150px;
+      padding: 1px 0px;
     }
     
 }
@@ -305,6 +332,11 @@ color: rgb(146, 146, 146);
     #top-right{
         width: auto;
     }
+
+    #project-status p{
+      width: 140px;
+    }
+    
 }
 
 @media (max-width:560px){

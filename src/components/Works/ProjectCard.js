@@ -52,7 +52,11 @@ const ProjectCard = ({
           {languages?.length &&
             languages?.map((lang) => (
               <div id="lang-logos" key={lang}>
-                <img src={lang} alt="logos" />
+                <img
+                  src={lang?.icon}
+                  alt="logos"
+                  className={lang.text == "React" && "react-animate"}
+                />
               </div>
             ))}
         </div>

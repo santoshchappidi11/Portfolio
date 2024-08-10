@@ -44,6 +44,7 @@ const Works = () => {
                 return (
                   <>
                     <ProjectCard
+                      key={id}
                       id={id}
                       title={title}
                       // url={url}
@@ -56,39 +57,6 @@ const Works = () => {
                       project_url={project_url}
                       github_url={github_url}
                     />
-                    {/* <div
-                      className="project"
-                      key={id}
-                      onMouseMove={handleMouseMove}
-                      style={{
-                        transform: `rotateX(${tilt.mouseY * 10}deg) rotateY(${
-                          tilt.mouseX * 10
-                        }deg)`,
-                      }}
-                    >
-                      <div className="project-image">
-                        <img src={image} alt="project-images" />
-                      </div>
-                      <div className="project-description">
-                        <h2>{title}</h2>
-                        <p>{description}</p>
-                        <h4>
-                          <span>{languages}</span>
-                        </h4>
-                        <div className="project-buttons">
-                          <div className="project-button">
-                            <a href={url}>
-                              <button>{view}</button>
-                            </a>
-                          </div>
-                          <div className="project-button">
-                            <a href={url}>
-                              <button>{code}</button>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
                   </>
                 );
               })}

@@ -98,11 +98,6 @@ const Home = () => {
               </a>
             </div>
           </div>
-          {/* <div className="main-img">
-            <Zoom>
-              <img src={heroImage} alt="Intro" loading="lazy" />
-            </Zoom>
-          </div> */}
         </main>
       </section>
     </Fade>

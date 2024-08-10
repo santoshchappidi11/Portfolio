@@ -3,7 +3,10 @@ import "./Project.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { projectsData } from "../Data/Data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong, faEye } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeftLong,
+  faCircleDot,
+} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
@@ -96,7 +99,11 @@ const Project = () => {
                     {singleProject?.languages?.length &&
                       singleProject?.languages?.map((lang) => (
                         <div id="project-lang">
-                          <img src={lang} alt="logos" />
+                          <img
+                            src={lang?.icon}
+                            alt="logos"
+                            className={lang.text == "React" && "react-animate"}
+                          />
                         </div>
                       ))}
                   </div>
@@ -108,7 +115,15 @@ const Project = () => {
                     <h3>{singleProject?.description}</h3>
                     <div id="project-status">
                       <h4>Status</h4>
-                      <p>Live</p>
+                      <p>
+                        <FontAwesomeIcon
+                          icon={faCircleDot}
+                          size="sm"
+                          id="status-icon"
+                        />
+                        {"  "}
+                        Project is live
+                      </p>
                     </div>
                     <div id="project-features">
                       <h4>Features</h4>

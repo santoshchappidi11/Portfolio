@@ -1,12 +1,9 @@
-// import landingPageImage from "../../Images/landing-page.png";
-// import calculatorAppImage from "../../Images/calculator-app.png";
-// import todoAppImage from "../../Images/todo-app.png";
-// import facebookImage from "../../Images/facebook.png";
 import weatherAppImage from "../../Images/weather-app.png";
 import shoppingImage from "../../Images/headphones-shopping.png";
 import ushopImage from "../../Images/ushop.png";
-import taskImage from "../../Images/task-management.png";
+// import taskImage from "../../Images/task-management.png";
 import connectImage from "../../Images/connect.png";
+import taskImage from "../../Images/task-managements.png";
 
 // import htmlImg from "../../Images/html-5.png";
 // import jsImg from "../../Images/js.png";
@@ -16,6 +13,7 @@ import expressImg from "../../Images/express.png";
 import mongodbImg from "../../Images/mongodb.png";
 import nodeImg from "../../Images/node-js.png";
 import tailwindImg from "../../Images/tailwind.png";
+import nextImg from "../../Images/next-js.png";
 
 import searchLogo from "../../Images/search.png";
 import loginLogo from "../../Images/login.png";
@@ -32,13 +30,14 @@ import cartLogo from "../../Images/cart.png";
 import removeCartLogo from "../../Images/remove-cart.png";
 import stripeLogo from "../../Images/payment.png";
 import editLogo from "../../Images/edit.png";
-import deleteAllLogo from "../../Images/delete-all.png";
-import retrieveLogo from "../../Images/rotate.png";
+// import deleteAllLogo from "../../Images/delete-all.png";
+// import retrieveLogo from "../../Images/rotate.png";
 import checkoutLogo from "../../Images/checkout.png";
 import filterLogo from "../../Images/filter.png";
 import cityLogo from "../../Images/city.png";
 import forecastLogo from "../../Images/forecast.png";
 import countryLogo from "../../Images/country.png";
+import dragdropLogo from "../../Images/drag-drop.png";
 
 export const navLinks = [
   {
@@ -95,7 +94,12 @@ export const projectsData = [
       "stripe payment integration",
       "profile update",
     ],
-    languages: [reactImg, nodeImg, expressImg, mongodbImg],
+    languages: [
+      { icon: reactImg, text: "React" },
+      { icon: nodeImg, text: "Node.js" },
+      { icon: expressImg, text: "Express" },
+      { icon: mongodbImg, text: "MongoDB" },
+    ],
     view: "View",
     code: "Code",
   },
@@ -132,26 +136,32 @@ export const projectsData = [
       "follow/unfollow friend",
       "see only following friend posts",
     ],
-    languages: [reactImg, nodeImg, expressImg, mongodbImg],
+    languages: [
+      { icon: reactImg, text: "React" },
+      { icon: nodeImg, text: "Node.js" },
+      { icon: expressImg, text: "Express" },
+      { icon: mongodbImg, text: "MongoDB" },
+    ],
     view: "View",
     code: "Code",
   },
   {
     id: 3,
     title: "task management",
-    project_url: "https://task-management-03.netlify.app/",
-    github_url: "https://github.com/santoshchappidi11/Task-Management-App",
+    project_url: "https://task-management-3.netlify.app/",
+    github_url: "https://github.com/santoshchappidi11/task-management-nextjs",
     image: taskImage,
-    description: "Task Management website built using MERN",
+    description: "Task Management website built using Next JS",
     logos: [
       loginLogo,
       loginLogo,
       addLogo,
       editLogo,
       deleteLogo,
-      deleteAllLogo,
-      retrieveLogo,
-      retrieveLogo,
+      dragdropLogo,
+      // deleteAllLogo,
+      // retrieveLogo,
+      // retrieveLogo,
     ],
     features: [
       "login",
@@ -159,11 +169,18 @@ export const projectsData = [
       "add task (title, description, due date, priority, status)",
       "edit task (title, description, due date, priority, status)",
       "delete task",
-      "delete all tasks",
-      "retrieve deleted tasks",
-      "retrieve completed tasks",
+      "drag and drop to update task status",
+      // "delete all tasks",
+      // "retrieve deleted tasks",
+      // "retrieve completed tasks",
     ],
-    languages: [reactImg, tailwindImg, nodeImg, expressImg, mongodbImg],
+    languages: [
+      { icon: nextImg, text: "Next" },
+      { icon: tailwindImg, text: "tailwindCSS" },
+      { icon: nodeImg, text: "Node.js" },
+      { icon: expressImg, text: "Express" },
+      { icon: mongodbImg, text: "MongoDB" },
+    ],
     view: "View",
     code: "Code",
   },
@@ -176,7 +193,10 @@ export const projectsData = [
     description: "Weather Application built with React JS",
     logos: [cityLogo, countryLogo, forecastLogo],
     features: ["search city", "search country", "five days forecast"],
-    languages: [reactImg, cssImg],
+    languages: [
+      { icon: reactImg, text: "React" },
+      { icon: cssImg, text: "css" },
+    ],
     view: "View",
     code: "Code",
   },
@@ -195,7 +215,10 @@ export const projectsData = [
       "search products",
       "checkout from cart",
     ],
-    languages: [reactImg, cssImg],
+    languages: [
+      { icon: reactImg, text: "React" },
+      { icon: cssImg, text: "css" },
+    ],
     view: "View",
     code: "Code",
   },
