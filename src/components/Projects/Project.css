@@ -19,7 +19,7 @@ body{
     height: 100%;
     width: 100%;
     padding-top: 5rem;
-    /* padding-bottom: 2rem; */
+    padding-bottom: 2rem;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -27,6 +27,7 @@ body{
     font-family: inherit;
     color: rgb(225, 225, 225);
     background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(to right, transparent 20%, rgb(34, 20, 20) 50%, transparent 80%);
     /* border: 1px solid black; */
 }
 

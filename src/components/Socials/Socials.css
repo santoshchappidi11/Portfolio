@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(to right, transparent 20%, rgb(29, 17, 17) 50%, transparent 80%);
     /* background-color: rgb(33, 33, 33); */
   }
   

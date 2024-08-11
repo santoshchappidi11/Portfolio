@@ -2,18 +2,17 @@
     position: relative;
     height: 100%;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
     color: white;
     background-color: rgb(10, 10, 10);
+     background-image: linear-gradient(to right, transparent 20%, rgb(34, 20, 20) 50%, transparent 80%);
     /* background-color: rgb(39, 39, 39); */
     /* background-color: rgb(40, 40, 43); */
     /* background-color: rgba(253, 170, 15, 0.9); */
     /* border: 1px solid black; */
   }
 
-  
-  
   .main {
     height: 100%;
     width: 100%;
@@ -41,6 +40,7 @@
   }
   
   .main-intro .intro p {
+    /* border: 1px solid white; */
     padding: 1rem 0;
     position: relative;
     text-transform: uppercase;
@@ -50,14 +50,14 @@
     color: #ffffff;
   }
   
-  .intro p::after {
+  .intro p::before {
     content: "";
     position: absolute;
     height: 0.1rem;
-    width: 5rem;
-    bottom: 1.7rem;
-    background-color: #ffffff;
-    margin-left: 0.5rem;
+    width: 9rem;
+    bottom: 1.2rem;
+    background-color: rgb(92, 92, 92);
+    /* margin-left: 0.5rem; */
   }
   
   .intro h1 {
@@ -65,9 +65,14 @@
     line-height: 5rem;
     font-weight: 400;
   }
+
+  .intro p span{
+    font-size: 30px;
+  }
   
   .main-intro .intro-btns {
     padding: 2rem 0;
+    margin-top: 2rem;
     height: auto;
     width: 100%;
     display: flex;
@@ -94,14 +99,16 @@
     cursor: pointer;
     transition: 0.4s ease;
     color: #ffffff;
-    border: 1px solid #656565;
     /* border: 1px solid #ffffff; */
     /* background-color: #ffffff; */
+    border: 1px solid transparent;
   }
   
   .intro-btns button:hover {
-    background-color: #ffffff;
+    border: 1px solid #656565;
+    /* background-color: rgb(255,255,255,0.9); */
     color: black;
+    color: white;
   }
   
   .intro-btns a:last-child button{
@@ -135,9 +142,6 @@
     color: #ffffff;
   }
 
-
-
-  
   .intro-scroll a:last-child {
     text-decoration: none;
     font-weight: 400;

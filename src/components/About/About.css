@@ -3,6 +3,8 @@
     width: 100%;
     padding-top: 1rem;
     background-color: rgb(10, 10, 10);
+    /* border-top: 1px solid rgb(83, 83, 83); */
+    background-image: linear-gradient(to right, transparent 20%, rgb(34, 20, 20) 50%, transparent 80%);
     /* background-color: orange; */
   }
   
@@ -62,32 +64,6 @@
     /* border: 1px solid white; */
   }
   
-  /* .about-img {
-    height: 26rem;
-    width: 30%;
-    object-fit: cover;
-    border: 1px solid black;
-  }
-  
-  .about-img img {
-    height: 95%;
-    width: 100%;
-    filter: contrast(140%) drop-shadow(1px 1px 5px rgb(75, 75, 75, 0.8));
-    object-fit: contain;
-    animation: skillsImg 3s 1.5s infinite linear forwards;
-  } */
-  
-  /* @keyframes skillsImg {
-    0% {
-      transform: translateY(0%);
-    }
-    50% {
-      transform: translateY(2%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  } */
   
   .about-content {
     height: auto;
@@ -110,10 +86,9 @@
   }
   
   .content-intro h2 {
-  
     letter-spacing: 0.1rem;
     font-size: 18px;
-      color: salmon;
+    color: salmon;
   }
   
   .content-intro p {
@@ -191,7 +166,8 @@
   
   .skills .badge h4 {
     margin: 0.2rem 0 0 0;
-    font-weight: 300;
+    font-weight: 200;
+    font-size: 15px;
   }
 
   #skills-img{

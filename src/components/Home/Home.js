@@ -29,7 +29,9 @@ const Home = () => {
           <div className="main-intro">
             <div className="intro">
               <Slide triggerOnce>
-                <p>Hello There</p>
+                <p>
+                  Hello There <span>👋</span>
+                </p>
               </Slide>
               <Fade cascade delay={1000} triggerOnce>
                 <h1>
@@ -62,15 +64,13 @@ const Home = () => {
             </div>
 
             <div className="intro-scroll">
-              <a href="https://github.com/santoshchappidi11">
+              {/* <a href="https://github.com/santoshchappidi11">
                 <i className="fab fa-github fa-2x"></i>
               </a>
               <a href="https://www.linkedin.com/in/santosh-chappidi-a98b59215">
                 <i className="fab fa-linkedin fa-2x"></i>
               </a>
               <a href="https://drive.google.com/uc?export=download&id=1p0JOPLGpair8aVMKDIrqxHzhgpT-oKG4">
-                {/* <a href="https://drive.google.com/uc?export=download&id=1FtEpOg7Xdj4YOeoaK3XY8KSIckdOXuhE"> */}
-                {/* <button>Resume</button> */}
                 <motion.button
                   whileTap={{ scale: 0.9 }}
                   style={{
@@ -91,7 +91,7 @@ const Home = () => {
                     />
                   </div>
                 </motion.button>
-              </a>
+              </a> */}
               <a href="#About">
                 SCROLL DOWN{" "}
                 <i className="fas fa-angle-double-down" id="scroll-down"></i>

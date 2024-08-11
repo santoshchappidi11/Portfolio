@@ -5,7 +5,7 @@ import cssImg from "../../Images/css-3.png";
 import tailwindcss from "../../Images/tailwind.png";
 import jsImg from "../../Images/js.png";
 import reactImg from "../../Images/react.png";
-import nextImg from "../../Images/next-js.png";
+// import nextImg from "../../Images/next-js.png";
 import expressImg from "../../Images/express.png";
 import mongoImg from "../../Images/mongodb.png";
 import nodeImg from "../../Images/node-js.png";
@@ -39,11 +39,6 @@ const About = () => {
           <p>Get to know more about me.</p>
         </header>
         <main className="about-main">
-          {/* <div className="about-img">
-            <Zoom>
-              <img src={skillsImage} alt="skills" loading="lazy" />
-            </Zoom>
-          </div> */}
           <div className="about-content">
             <div className="content-intro">
               <h2>Hello!</h2>
@@ -72,7 +67,7 @@ const About = () => {
                 <h3>Skills</h3>
               </AttentionSeeker>
               <div className="skills">
-                <Fade cascade>
+                <Fade cascade duration={650}>
                   <div className="badge">
                     <div id="skills-img">
                       <img src={htmlImg} alt="html" />

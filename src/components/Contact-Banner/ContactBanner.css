@@ -1,0 +1,56 @@
+#main-banner{
+    top: 92%;
+    left: 42%;
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    transition: all 0.5s ease;
+    padding: 25px 5px;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 8px;
+    background-color: rgb(25, 25, 25);
+    box-shadow: rgba(124, 124, 124, 0.25) 0px 54px 55px, rgba(146, 146, 146, 0.12) 0px -12px 30px, rgba(56, 56, 56, 0.12) 0px 4px 6px, rgba(25, 25, 25, 0.17) 0px 12px 13px, rgba(60, 60, 60, 0.09) 0px -3px 5px;
+}
+
+#main-banner a{
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: white;
+}
+
+#main-banner a i{  
+    font-size: 1.8rem;
+}
+
+#main-banner a:last-child {
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  #main-banner a:nth-child(3) button {
+    padding: 0.2rem 0.5rem;
+    border: none;
+    background: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: inherit;
+    letter-spacing: 0.1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    border: 1px solid #252525;
+}
+
+#main-banner a:nth-child(3) button:hover{
+    background-color: white;
+    color: black;
+  }
