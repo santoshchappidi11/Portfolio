@@ -8,7 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Socials from "./components/Socials/Socials";
 import { Route, Routes } from "react-router-dom";
 import Project from "./components/Projects/Project.js";
-import ContactBanner from "./components/Contact-Banner/ContactBanner.js";
+// import ContactBanner from "./components/Contact-Banner/ContactBanner.js";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
