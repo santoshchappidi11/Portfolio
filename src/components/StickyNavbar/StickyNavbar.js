@@ -73,22 +73,17 @@ const StickyNavbar = () => {
             S<span>C</span>
           </a>
         </div>
-        {/* <button onClick={ToggleBackground}>Toggle Color</button> */}
+
         <div className="nav-links">
           <a href="#Contact">
             {" "}
-            {/* <button>
-                Contact me!
-                </button> */}
             <motion.button
               className="button"
               whileTap={{ scale: 0.85 }}
               onMouseOver={() => callAnimation()}
               onMouseLeave={() => stopCallAnimation()}
             >
-              {/* <button> */}
-              Contact me!
-              {/* </button> */}
+              Contact
               <div
                 className={`${
                   contactHover ? "call-logo call-logo-animate" : "call-logo "
@@ -98,22 +93,6 @@ const StickyNavbar = () => {
               </div>
             </motion.button>
           </a>
-          {/* <ul>
-            {links.map((link) => {
-              const { id, title, url } = link;
-              return (
-                <li key={id}>
-                  <a
-                    href={url}
-                    onClick={() => setIsItemClicked(url)}
-                    className={`${url === isItemClicked ? "active" : ""}`}
-                  >
-                    {title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul> */}
         </div>
 
         <div
