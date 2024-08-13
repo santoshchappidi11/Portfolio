@@ -92,7 +92,7 @@ const Home = () => {
                   </div>
                 </motion.button>
               </a> */}
-              <a href="#About">
+              <a href="#About" id="scroll-down-below">
                 SCROLL DOWN{" "}
                 <i className="fas fa-angle-double-down" id="scroll-down"></i>
               </a>

@@ -25,17 +25,18 @@
   
   .main-intro {
     height: auto;
-    width: 50%;
+    width: auto;
     /* padding-top: 5rem; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid white; */
     /* color: #ffffff; */
+    /* border: 1px solid white; */
   }
   
   .main-intro .intro{
+    width: 60%;
     text-align: center;
     /* border: 1px solid white; */
   }
@@ -62,7 +63,7 @@
   }
   
   .intro h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 5rem;
     font-weight: 400;
   }
@@ -75,10 +76,11 @@
     padding: 2rem 0;
     margin-top: 2rem;
     height: auto;
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    /* width: 50%; */
     /* border: 1px solid white; */
   }
   
@@ -100,9 +102,9 @@
     cursor: pointer;
     transition: 0.4s ease;
     color: #ffffff;
+    border: 1px solid transparent;
     /* border: 1px solid #ffffff; */
     /* background-color: #ffffff; */
-    border: 1px solid transparent;
   }
   
   .intro-btns button:hover {
@@ -219,19 +221,43 @@
   }
   
   /* RESPONSIVE------------------------------------ */
-  @media (max-width: 1000px) {
 
+@media (max-width:1480px) {
+  .main-intro .intro{
+    width: 70%;
+  }
+}
+
+@media (max-width:1275px) {
+  .main-intro .intro{
+    width: 80%;
+    /* border: 1px solid white; */
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .section-1 {
+    height: 100%;
+  }
+}
+
+  @media (max-width: 1000px) {
     .main {
       margin: 0rem 0;
     }
 
-
     .main-intro {
       margin-top: 5rem;
-      margin-left: 2rem;
-      width: 80%;
+      /* width: 85%; */
+      /* margin-left: 2rem; */
+      /* border: 1px solid white; */
     }
   
+    .intro h1 {
+      font-size: 4.5rem;
+    }
+
     .main-intro .intro-btns {
       /* flex-direction: column; */
     }
@@ -245,27 +271,31 @@
     }
   
   }
-  
-  @media (max-width: 1024px) {
-    .section-1 {
-      height: 100%;
+
+  @media (max-width:867px){ 
+    .intro h1 {
+      font-size: 4rem;
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
 
     .section-1 {
       /* padding: 0rem; */
     }
 
-  
+    .main-intro .intro{
+      width: 100%;
+      /* border: 1px solid white; */
+    }
+
     .main-intro .intro p {
       text-align: center;
     }
 
     .main-intro .intro h1{
       text-align: center;
-      font-size: 3rem;
+      font-size: 3.8rem;
       line-height: 4rem;
     }
 
@@ -280,23 +310,41 @@
   
     .main-intro {
       width: 80%;
-      margin-top: 5rem;
-      margin-left: -0.2rem;
+      /* border: 1px solid white; */
     }
-  
+    
     .main-intro .intro-btns {
       flex-direction: row;
+      width: 85%;
+      /* border: 1px solid red; */
+
     }
   
     .intro-scroll a {
       padding: 0.8rem;
     }
   }
-  
-  @media (max-width : 480px) {
+
+  @media (max-width:610px) {
+    .main-intro .intro h1{
+      font-size: 3.2rem;
+    }
+  }
+
+  @media (max-width:555px) {
     .main-intro .intro-btns {
       flex-direction: column;
     }
+  }
+
+  @media (max-width:515px) {
+    .main-intro .intro h1{
+      font-size: 3rem;
+    }
+  }
+  
+  
+  @media (max-width : 480px) {
 
     .intro p::after{
       width: 2rem;
@@ -304,7 +352,7 @@
     
     .intro h1{
      line-height: 2.8rem !important;
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     }
 
   }
@@ -326,10 +374,16 @@
       width: 21rem;
     }
   }
+
+  @media (max-width:400px) {
+    .intro h1{
+     font-size: 2rem !important;
+     }
+  }
   
   @media (max-width: 378px) {
     .intro-btns a button {
-      font-size: 0.9rem;
+      font-size: 0.8rem !important;
     }
   
     .main-intro .intro-scroll {
