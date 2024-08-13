@@ -12,7 +12,7 @@ const ContactBanner = () => {
       <a href="https://www.linkedin.com/in/santosh-chappidi-a98b59215">
         <i className="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="https://drive.google.com/uc?export=download&id=1p0JOPLGpair8aVMKDIrqxHzhgpT-oKG4">
+      <a href="https://drive.google.com/uc?export=download&id=1XnarDJD6m47Cmip0yMsp67A3FiBspNOC">
         <motion.button
           whileTap={{ scale: 0.9 }}
           style={{
