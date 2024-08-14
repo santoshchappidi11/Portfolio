@@ -1,20 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Works.css";
 import { projectsData } from "../Data/Data";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
 import ProjectCard from "./ProjectCard";
 
 const Works = () => {
-  // const [tilt, setTilt] = useState({ mouseX: 0, mouseY: 0 });
-
-  // const handleMouseMove = (e) => {
-  //   const { clientX, clientY } = e;
-  //   const x = (clientX / window.innerWidth - 0.5) * 5;
-  //   const y = -(clientY / window.innerHeight - 0.5) * 5;
-
-  //   setTilt({ mouseX: x, mouseY: y });
-  // };
-
   return (
     <>
       <section id="Works" className="section-3">

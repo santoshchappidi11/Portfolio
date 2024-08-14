@@ -13,20 +13,6 @@ const ProjectCard = ({
   github_url,
 }) => {
   const navigateTo = useNavigate();
-  // const initialTilt = { mouseX: 0, mouseY: 0 };
-  // const [tilt, setTilt] = useState(initialTilt);
-
-  // const handleMouseMove = (e) => {
-  //   const { clientX, clientY } = e;
-  //   const x = (clientX / window.innerWidth - 0.5) * 8;
-  //   const y = -(clientY / window.innerHeight - 0.5) * 8;
-
-  //   setTilt({ mouseX: x, mouseY: y });
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setTilt(initialTilt);
-  // };
 
   return (
     <div className="project" key={id}>
@@ -44,9 +30,6 @@ const ProjectCard = ({
         <h2>{title}</h2>
         <div id="project-description">
           <p>{description}</p>
-          {/* <div id="project-fetaures">
-            {features?.length && features?.map((item) => <p>{item}</p>)}
-          </div> */}
         </div>
         <div id="all-lang-logos">
           {languages?.length &&

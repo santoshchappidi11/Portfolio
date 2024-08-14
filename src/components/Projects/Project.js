@@ -128,14 +128,6 @@ const Project = () => {
                     <div id="project-features">
                       <h4>Features</h4>
                       <div id="main-features">
-                        {/* <div id="logos">
-                      {singleProject?.logos?.map((item) => (
-                        <div id="main-logo">
-                          <img src={item} alt="logo" />
-                        </div>
-                      ))}
-                    </div> */}
-
                         {singleProject?.features?.map((item, index) => {
                           const mainLogo = logos && logos[index];
 
@@ -147,7 +139,6 @@ const Project = () => {
                                 </div>
                               </div>
                               <span>{item}</span>
-                              {/* <li>{item}</li> */}
                             </div>
                           );
                         })}

@@ -1,11 +1,9 @@
 import React, { memo, useEffect, useRef } from "react";
 import "./Home.css";
-// import heroImage from "../../Images/hero.png";
 import { Fade } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
-// import { Zoom } from "react-awesome-reveal";
 import { motion } from "framer-motion";
-import downloadLogo from "../../Images/download-resume.png";
+
 const Home = () => {
   const sectionRef = useRef(null);
 
@@ -64,34 +62,6 @@ const Home = () => {
             </div>
 
             <div className="intro-scroll">
-              {/* <a href="https://github.com/santoshchappidi11">
-                <i className="fab fa-github fa-2x"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/santosh-chappidi-a98b59215">
-                <i className="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a href="https://drive.google.com/uc?export=download&id=1p0JOPLGpair8aVMKDIrqxHzhgpT-oKG4">
-                <motion.button
-                  whileTap={{ scale: 0.9 }}
-                  style={{
-                    display: "flex ",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  Resume
-                  <div
-                    id="resume-download"
-                    style={{ height: "25px", width: "25px" }}
-                  >
-                    <img
-                      src={downloadLogo}
-                      alt="download"
-                      style={{ height: "100%", width: "100%" }}
-                    />
-                  </div>
-                </motion.button>
-              </a> */}
               <a href="#About" id="scroll-down-below">
                 SCROLL DOWN{" "}
                 <i className="fas fa-angle-double-down" id="scroll-down"></i>

@@ -1,29 +1,16 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./StickyNavbar.css";
 import { navLinks } from "../Data/Data";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import callLogo from "../../Images/sentmessage.png";
-import { CommonContexts } from "../Context/CommonContext";
-// import { CommonContext } from "../Context/CommonContext";
 
 const StickyNavbar = () => {
-  // const [state, ToggleBackground] = useContext(CommonContexts);
-
   const [navbar, setNavbar] = useState(false);
   const [links] = useState(navLinks);
   const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
   const [isHamburgerLinksToggled, setIsHamburgerLinksToggled] = useState(false);
   const [contactHover, setContactHover] = useState(false);
-  // const [isItemClicked, setIsItemClicked] = useState("#HOME");
-  // const [activeSection, setIsActiveSection] = useState("#HOME");
-  // const [changeColor, setChangeColor] = useState(false);
-
-  // console.log(state, "context here");
-
-  // const toggleColor = () => {
-  //   setChangeColor(!changeColor);
-  // };
 
   const callAnimation = () => {
     setContactHover(true);
