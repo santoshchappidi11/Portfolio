@@ -93,10 +93,16 @@
   
   .content-intro p {
     color: rgb(163, 163, 163);
-    /* color: rgb(0, 0, 0); */
     font-weight: 400;
     word-spacing: 0.2rem;
+    text-align: justify;
+    text-align: left;
+    margin: 0 auto; /* Center the block if using max-width */
     /* border: 1px solid white; */
+  }
+
+  #para-end{
+    text-align: center;
   }
   
   .content-intro p:last-child {
@@ -104,7 +110,7 @@
   }
   
   .content-intro p b {
-    color: rgb(213, 213, 213);
+    /* color: rgb(191, 191, 191); */
     font-weight: 500;
   }
   
@@ -253,6 +259,11 @@
     .content-skills {
       margin-top: 4rem;
     }
+
+    #para-end{
+      text-align: left;
+    }
+
   }
   
   @media (max-width: 768px) {
@@ -265,7 +276,11 @@
     }
 
     .content-intro p{
-      text-align:center;
+      text-align: left;
+      max-width: 100%;
+      margin: 0 auto;
+      /* word-spacing: 0.1rem; */
+      /* text-align:justify; */
       /* border: 1px solid white; */
     }
 

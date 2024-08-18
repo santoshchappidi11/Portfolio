@@ -43,20 +43,31 @@ const About = () => {
             <div className="content-intro">
               <h2>Hello!</h2>
               <p>
-                A passionate <b>MERN Stack developer</b>, having a quite good
-                knowledge in <b>HTML, CSS, JAVASCRIPT and REACT</b>. Comfortable
-                with <b>Node.js and Framework like Express</b>. A
-                <b> quick learner</b> with an <b>adaptable nature</b>. Eager to
-                <b> apply my skills and knowledge to real-world projects</b> and
-                contribute to a dynamic team. As a <b>recent post-graduate</b>,
-                i am actively <b>seeking a role</b> that not only allows me to
-                apply and expand upon my existing knowledge, but also
-                <b> offers continuous learning opportunities and challenges</b>.
+                A passionate{" "}
+                <b>
+                  MERN Stack developer<span> 👩🏻‍💻</span>
+                </b>
+                , having quite good knowledge in <b>HTML</b> <span>📝</span>,{" "}
+                <b>CSS</b> <span>🎨</span>, <b>JAVASCRIPT</b>
+                <span>⚡</span>and <b>REACT</b> <span>⚛️</span>. Comfortable
+                with
+                <b> Node.js</b> <span>🛠️</span> and frameworks like{" "}
+                <b>Express</b> <span>🚀</span>. A <b>quick learner</b>{" "}
+                <span>📚</span> with an <b>adaptable nature</b> <span>🌱</span>.
+                Eager to{" "}
+                <b>apply my skills and knowledge to real-world projects</b>{" "}
+                <span>🌍</span> and contribute to a dynamic team <span>🤝</span>
+                . As a <b>recent post-graduate</b> <span>🎓</span>, I am
+                actively <b>seeking a role</b> that not only allows me to apply
+                and expand upon my existing knowledge, but also{" "}
+                <b>offers continuous learning opportunities and challenges</b>
+                <span> 🚀</span>.
               </p>
 
-              <p>
-                I would love to hear from you, whether it's a
-                <b> Job, Internship opportunity or just a chat,</b> feel free to
+              <p id="para-end">
+                I would love to hear from you, whether it's a<b> Job</b>{" "}
+                <span>💼</span>, <b>Internship opportunity</b> <span>📈</span>,
+                or just a <b>chat</b> <span>🗨️</span>, feel free to
                 <b id="about-contact">
                   <a href="./#Contact"> contact me!</a>
                 </b>
