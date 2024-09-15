@@ -1,9 +1,9 @@
-import weatherAppImage from "../../Images/weather-app.png";
 import shoppingImage from "../../Images/headphones-shopping.png";
 import ushopImage from "../../Images/ushop.png";
-// import taskImage from "../../Images/task-management.png";
 import connectImage from "../../Images/connect.png";
 import taskImage from "../../Images/task-managements.png";
+import galleryImage from "../../Images/gallery.png";
+// import weatherAppImage from "../../Images/weather-app.png";
 
 // import htmlImg from "../../Images/html-5.png";
 // import jsImg from "../../Images/js.png";
@@ -30,14 +30,17 @@ import cartLogo from "../../Images/cart.png";
 import removeCartLogo from "../../Images/remove-cart.png";
 import stripeLogo from "../../Images/payment.png";
 import editLogo from "../../Images/edit.png";
-// import deleteAllLogo from "../../Images/delete-all.png";
-// import retrieveLogo from "../../Images/rotate.png";
 import checkoutLogo from "../../Images/checkout.png";
 import filterLogo from "../../Images/filter.png";
-import cityLogo from "../../Images/city.png";
-import forecastLogo from "../../Images/forecast.png";
-import countryLogo from "../../Images/country.png";
 import dragdropLogo from "../../Images/drag-drop.png";
+import randomLogo from "../../Images/random.png";
+import singlePhotoLogo from "../../Images/singlephoto.png";
+import downloadLogo from "../../Images/donwload.png";
+import viewLogo from "../../Images/view.png";
+import paginationLogo from "../../Images/pagination.png";
+// import forecastLogo from "../../Images/forecast.png";
+// import countryLogo from "../../Images/country.png";
+// import cityLogo from "../../Images/city.png";
 
 export const navLinks = [
   {
@@ -186,16 +189,30 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "weather forecast",
-    image: weatherAppImage,
-    project_url: "https://weather-application-03.netlify.app/",
-    github_url: "https://github.com/santoshchappidi11/weather-app-react",
-    description: "Weather Application built with React JS",
-    logos: [cityLogo, countryLogo, forecastLogo],
-    features: ["search city", "search country", "five days forecast"],
+    title: "Picture gallery",
+    image: galleryImage,
+    project_url: "https://gallery-app-03.vercel.app/",
+    github_url: "https://github.com/santoshchappidi11/picture-gallery-app",
+    description: "Gallery application built with Next JS",
+    logos: [
+      filterLogo,
+      randomLogo,
+      singlePhotoLogo,
+      paginationLogo,
+      downloadLogo,
+      viewLogo,
+    ],
+    features: [
+      "search by category",
+      "random photos on refresh",
+      "single photo details",
+      "pagination",
+      "download photo",
+      "view on unsplash",
+    ],
     languages: [
-      { icon: reactImg, text: "React" },
-      { icon: cssImg, text: "css" },
+      { icon: nextImg, text: "Next JS" },
+      { icon: tailwindImg, text: "TailwindCSS" },
     ],
     view: "View",
     code: "Code",
