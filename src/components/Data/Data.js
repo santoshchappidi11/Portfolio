@@ -3,7 +3,7 @@ import ushopImage from "../../Images/ushop.png";
 import connectImage from "../../Images/connect.png";
 import taskImage from "../../Images/task-managements.png";
 import galleryImage from "../../Images/gallery.png";
-// import weatherAppImage from "../../Images/weather-app.png";
+import shoppingCartImage from "../../Images/shopping-cart.png";
 
 // import htmlImg from "../../Images/html-5.png";
 // import jsImg from "../../Images/js.png";
@@ -38,6 +38,7 @@ import singlePhotoLogo from "../../Images/singlephoto.png";
 import downloadLogo from "../../Images/donwload.png";
 import viewLogo from "../../Images/view.png";
 import paginationLogo from "../../Images/pagination.png";
+import quantityLogo from "../../Images/quantity.png";
 // import forecastLogo from "../../Images/forecast.png";
 // import countryLogo from "../../Images/country.png";
 // import cityLogo from "../../Images/city.png";
@@ -220,21 +221,29 @@ export const projectsData = [
   {
     id: 5,
     title: "shopping cart",
-    project_url: "https://headphones-shopping.netlify.app/",
-    github_url: "https://github.com/santoshchappidi11/shopping-cart",
-    image: shoppingImage,
-    description: "Shopping Cart built with React JS",
-    logos: [filterLogo, cartLogo, removeCartLogo, searchLogo, checkoutLogo],
+    project_url: "https://shopping-cart-03.netlify.app/",
+    github_url: "https://github.com/santoshchappidi11/shopping-cart-nextjs",
+    image: shoppingCartImage,
+    description: "Shopping Cart built with Next JS",
+    logos: [
+      filterLogo,
+      cartLogo,
+      removeCartLogo,
+      searchLogo,
+      checkoutLogo,
+      quantityLogo,
+    ],
     features: [
       "filter products",
       "add to cart",
       "remove from cart",
       "search products",
       "checkout from cart",
+      "handle product quantity",
     ],
     languages: [
-      { icon: reactImg, text: "React" },
-      { icon: cssImg, text: "css" },
+      { icon: nextImg, text: "Next JS" },
+      { icon: tailwindImg, text: "TailwindCSS" },
     ],
     view: "View",
     code: "Code",
