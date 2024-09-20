@@ -1,13 +1,13 @@
-import shoppingImage from "../../Images/headphones-shopping.png";
 import ushopImage from "../../Images/ushop.png";
 import connectImage from "../../Images/connect.png";
 import taskImage from "../../Images/task-managements.png";
 import galleryImage from "../../Images/gallery.png";
 import shoppingCartImage from "../../Images/shopping-cart.png";
+// import shoppingImage from "../../Images/headphones-shopping.png";
 
 // import htmlImg from "../../Images/html-5.png";
 // import jsImg from "../../Images/js.png";
-import cssImg from "../../Images/css-3.png";
+// import cssImg from "../../Images/css-3.png";
 import reactImg from "../../Images/react.png";
 import expressImg from "../../Images/express.png";
 import mongodbImg from "../../Images/mongodb.png";
