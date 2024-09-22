@@ -106,6 +106,7 @@ export const projectsData = [
     ],
     view: "View",
     code: "Code",
+    live: true,
   },
   {
     id: 2,
@@ -148,6 +149,7 @@ export const projectsData = [
     ],
     view: "View",
     code: "Code",
+    live: true,
   },
   {
     id: 3,
@@ -187,6 +189,7 @@ export const projectsData = [
     ],
     view: "View",
     code: "Code",
+    live: true,
   },
   {
     id: 4,
@@ -217,6 +220,7 @@ export const projectsData = [
     ],
     view: "View",
     code: "Code",
+    live: false,
   },
   {
     id: 5,
@@ -247,5 +251,6 @@ export const projectsData = [
     ],
     view: "View",
     code: "Code",
+    live: true,
   },
 ];

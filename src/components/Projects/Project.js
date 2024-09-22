@@ -69,11 +69,7 @@ const Project = () => {
               <div id="top-right">
                 <a href={singleProject?.project_url}>
                   {/* <button> */}
-                  <motion.button
-                    whileTap={{ scale: "0.85" }}
-                    id="visit"
-                    // style={{ backgroundColor: "white", color: "black" }}
-                  >
+                  <motion.button whileTap={{ scale: "0.85" }} id="visit">
                     Visit Live
                   </motion.button>
                   {/* </button> */}
@@ -115,14 +111,20 @@ const Project = () => {
                     <h3>{singleProject?.description}</h3>
                     <div id="project-status">
                       <h4>Status</h4>
-                      <p>
+                      <p
+                        className={
+                          singleProject?.live == false ? "not-live" : "live"
+                        }
+                      >
                         <FontAwesomeIcon
                           icon={faCircleDot}
                           size="sm"
                           id="status-icon"
                         />
                         {"  "}
-                        Project is live
+                        {singleProject?.live == true
+                          ? "Project is live"
+                          : "Project is not live"}
                       </p>
                     </div>
                     <div id="project-features">
