@@ -240,10 +240,6 @@ body {
   margin-right: 2px;
 }
 
-#project-features {
-  /* border: 1px solid white; */
-}
-
 #logos {
   display: flex;
   flex-direction: column;
@@ -259,10 +255,6 @@ body {
   height: 100%;
   width: 100%;
   object-fit: contain;
-}
-
-#main-features {
-  /* display: flex; */
 }
 
 #features {
