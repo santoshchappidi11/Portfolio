@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Works.css";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -9,8 +9,8 @@ const ProjectCard = ({
   image,
   description,
   languages,
-  project_url,
   github_url,
+  // project_url,
 }) => {
   const navigateTo = useNavigate();
 
