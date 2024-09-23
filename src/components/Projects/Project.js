@@ -115,7 +115,7 @@ const Project = () => {
                     <h3>{singleProject?.description}</h3>
                     <div id="project-status">
                       <h4>Status</h4>
-                      <p
+                      <span
                         className={
                           singleProject?.live == false ? "not-live" : "live"
                         }
@@ -129,7 +129,7 @@ const Project = () => {
                         {singleProject?.live == true
                           ? "Project is live"
                           : "Project is not live"}
-                      </p>
+                      </span>
                     </div>
                     <div id="project-features">
                       <h4>Features</h4>
