@@ -78,7 +78,7 @@
 }
 
 .project {
-  /* height: 32rem; */
+  height: auto;
   width: 20rem;
   display: flex;
   justify-content: space-between;
@@ -88,21 +88,23 @@
   border-radius: 0.5rem;
   color: white;
   backdrop-filter: blur(8px);
-  background-color: rgb(28, 28, 28);
+  background-color: black;
   transition: transform 0.3s ease-out;
   box-shadow: rgba(27, 27, 27, 0.25) 0px 30px 60px -12px inset,
     rgba(27, 27, 27, 0.3) 0px 18px 36px -18px inset;
-  /* cursor: pointer; */
-  /* background-color: rgb(32, 32, 32); */
-  /* transform-style: preserve-3d; */
-  /* background-color: rgb(45, 45, 45); */
-  /* border: 1px solid rgb(255, 255, 255); */
+  color: white;
+  background-color: rgb(10, 10, 10);
+  background-image: linear-gradient(
+    to right,
+    transparent 20%,
+    rgb(39, 21, 21) 50%,
+    transparent 80%
+  );
 }
 
 .project:hover {
-  /* box-shadow: rgba(117, 117, 117, 0.19) 0px 10px 20px, rgba(118, 118, 118, 0.23) 0px 6px 6px; */
   transform: translateY(-1%);
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(20, 20, 20);
 }
 
 .project-image {
@@ -114,8 +116,6 @@
   border-radius: 0.5rem;
   padding: 0 0.5rem;
   cursor: pointer;
-  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-  /* border: 1px solid white; */
 }
 
 .project-image > img {
@@ -124,8 +124,6 @@
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   object-fit: contain;
-  /* filter: contrast(120%); */
-  /* border: 1px solid white; */
 }
 
 .project-description {
@@ -171,7 +169,6 @@
   justify-content: space-around;
   align-items: center;
   /* border: 1px solid white; */
-  /* background-color: #e5e5e5; */
 }
 
 .project-button {
@@ -203,11 +200,11 @@
   /* border: 1px solid #656565; */
   transition: all 0.3s ease;
   font-family: "poppins", sans-serif;
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(38, 38, 38);
 }
 
 .project-button button:hover {
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(48, 48, 48);
   color: white;
 }
 
@@ -235,11 +232,6 @@
   width: 65%;
   object-fit: contain;
   /* border-radius: 0.5rem; */
-}
-
-#project-description {
-  /* display: none; */
-  /* border: 1px solid white; */
 }
 
 .react-animate {
