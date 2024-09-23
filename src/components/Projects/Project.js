@@ -16,8 +16,7 @@ const Project = () => {
   const [singleProject, setSingleProject] = useState({});
   const navigateTo = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
-
-  // console.log(singleProject, "single pro");
+  const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
     if (projectsData?.length) {
@@ -28,14 +27,15 @@ const Project = () => {
 
   useEffect(() => {
     if (singleProject) {
-      console.log("loaded..");
       setIsLoading(false);
+
+      if (singleProject?.live == false) {
+        setIsDisabled(true);
+      }
     }
   }, [singleProject]);
 
   const { logos } = singleProject;
-
-  // console.log(logos, "logos here");
 
   return (
     <>
@@ -68,18 +68,22 @@ const Project = () => {
               </div>
               <div id="top-right">
                 <a href={singleProject?.project_url}>
-                  {/* <button> */}
-                  <motion.button whileTap={{ scale: "0.85" }} id="visit">
+                  <motion.button
+                    whileTap={{ scale: isDisabled ? "" : "0.85" }}
+                    id="visit"
+                    disabled={isDisabled}
+                    style={{
+                      backgroundColor: isDisabled ? "#A0A0A0" : "white",
+                      cursor: isDisabled ? "not-allowed" : "pointer",
+                    }}
+                  >
                     Visit Live
                   </motion.button>
-                  {/* </button> */}
                 </a>
                 <a href={singleProject?.github_url}>
-                  {/* <button> */}
-                  <motion.button whileTap={{ scale: "0.85" }}>
+                  <motion.button whileTap={{ scale: "0.85" }} id="github">
                     Github <FontAwesomeIcon icon={faGithub} className="fa-lg" />
                   </motion.button>
-                  {/* </button> */}
                 </a>
               </div>
             </div>

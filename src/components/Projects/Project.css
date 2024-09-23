@@ -97,7 +97,6 @@ body {
   margin: 0 0 0 8px;
   font-weight: 500;
   transition: 0.4s ease;
-  color: #ffffff;
   border: 1px solid #656565;
   cursor: pointer;
   font-size: 15px;
@@ -109,9 +108,12 @@ body {
   color: black;
 }
 
+#github {
+  color: white;
+}
+
 #visit {
-  background-color: white !important;
-  color: black !important;
+  color: black;
 }
 
 #project-sections {

@@ -20,11 +20,7 @@ const ProjectCard = ({
         className="project-image"
         onClick={() => navigateTo(`project/${id}`)}
       >
-        <img
-          src={image}
-          alt="project-images"
-          // style={{ imageRendering: "pixelated" }}
-        />
+        <img src={image} alt="project-images" />
       </div>
       <div className="project-description">
         <h2>{title}</h2>
@@ -45,14 +41,15 @@ const ProjectCard = ({
         </div>
         <div className="project-buttons">
           <div className="project-button">
-            <a href={project_url}>
-              {/* <button>View</button> */}
-              <motion.button whileTap={{ scale: "0.85" }}>View</motion.button>
-            </a>
+            <motion.button
+              whileTap={{ scale: "0.85" }}
+              onClick={() => navigateTo(`project/${id}`)}
+            >
+              View
+            </motion.button>
           </div>
           <div className="project-button">
             <a href={github_url}>
-              {/* <button>Github</button> */}
               <motion.button whileTap={{ scale: "0.85" }}>Github</motion.button>
             </a>
           </div>
