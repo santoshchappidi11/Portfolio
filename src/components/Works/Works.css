@@ -142,14 +142,14 @@
   padding-bottom: 0.4rem;
   text-transform: capitalize;
   color: #ffffff;
-  /* color: rgb(255, 113, 5); */
+  /* color: rgb(255, 221, 196); */
 }
 
 .project-description p {
   width: 100%;
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgb(205, 205, 205);
+  color: rgb(160, 160, 160);
   margin: 0 0 1rem 0;
   /* border: 1px solid white; */
 }

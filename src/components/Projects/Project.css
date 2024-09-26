@@ -71,8 +71,8 @@ body {
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
-  color: #ffffff;
   margin: 1rem 0;
+  color: rgb(200, 200, 200);
 }
 
 #top-right {
@@ -275,6 +275,7 @@ body {
 #main-features span {
   text-transform: capitalize;
   margin: 0.2rem 0 0 0;
+  color: rgb(200, 200, 200);
 }
 
 .copyright-pro {
