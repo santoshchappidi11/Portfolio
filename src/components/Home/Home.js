@@ -28,7 +28,7 @@ const Home = () => {
             <div className="intro">
               <Slide triggerOnce>
                 <p>
-                  Hello There <span>👋</span>
+                  Hello There <span class="wave">👋</span>
                 </p>
               </Slide>
               <Fade cascade delay={1000} triggerOnce>
