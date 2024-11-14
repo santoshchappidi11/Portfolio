@@ -5,7 +5,7 @@ import cssImg from "../../Images/css-3.png";
 import tailwindcss from "../../Images/tailwind.png";
 import jsImg from "../../Images/js.png";
 import reactImg from "../../Images/react.png";
-// import nextImg from "../../Images/next-js.png";
+import nextImg from "../../Images/next-js.png";
 import expressImg from "../../Images/express.png";
 import mongoImg from "../../Images/mongodb.png";
 import nodeImg from "../../Images/node-js.png";
@@ -109,12 +109,12 @@ const About = () => {
                     </div>
                     <h4>REACT JS</h4>
                   </div>
-                  {/* <div className="badge">
+                  <div className="badge">
                     <div id="skills-img">
                       <img src={nextImg} alt="react" id="next" />
                     </div>
                     <h4>Next JS</h4>
-                  </div> */}
+                  </div>
                   <div className="badge">
                     <div id="skills-img">
                       <img src={expressImg} alt="express" />
